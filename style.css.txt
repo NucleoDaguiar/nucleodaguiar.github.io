@@ -1,0 +1,99 @@
+body{
+font-family: 'Inter', sans-serif;
+margin:0;
+color:#333;
+background:#faf7f2;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.header{
+background:#0f3b37;
+color:white;
+position:sticky;
+top:0;
+}
+
+.header-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.menu{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:22px;
+}
+
+.hero{
+background:#0f3b37;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.btn-primary{
+background:#b87a5b;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:6px;
+}
+
+.section{
+padding:80px 20px;
+}
+
+.bg-light{
+background:#f5f0e9;
+}
+
+.grid-3{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 3px 12px rgba(0,0,0,0.08);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+}
