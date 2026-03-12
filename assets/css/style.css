@@ -1083,3 +1083,74 @@ ul{
 .section-copy h1 {
     margin-top: 0;
 }
+
+/* ===================================== */
+/* AJUSTE PREMIUM DE GRID E ALINHAMENTO */
+/* ===================================== */
+
+.split-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+/* coluna esquerda */
+
+.section-copy{
+    max-width:560px;
+}
+
+/* label pequeno acima do titulo */
+
+.eyebrow{
+    display:block;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#c47a4f;
+    font-weight:600;
+
+    margin-bottom:18px;
+    margin-left:0;
+}
+
+/* garante alinhamento perfeito */
+
+.section-copy .eyebrow{
+    margin-left:0;
+}
+
+/* titulo principal */
+
+.section-copy h1,
+.section-copy h2{
+    margin-top:0;
+}
+
+/* ajuste de espaçamento profissional */
+
+.section-copy p{
+    margin-top:18px;
+}
+
+/* mapa */
+
+.map-box{
+    width:100%;
+}
+
+/* responsivo */
+
+@media(max-width:900px){
+
+.split-section{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.section-copy{
+max-width:100%;
+}
+
+}
