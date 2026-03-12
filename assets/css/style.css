@@ -1423,3 +1423,78 @@ max-width:92%;
 }
 
 }
+
+/* ===================================== */
+/* CORREÇÃO DEFINITIVA — CARROSSEL MOBILE */
+/* ===================================== */
+
+@media (max-width: 640px){
+
+  .hero-grid{
+    grid-template-columns:1fr !important;
+    gap:28px;
+  }
+
+  .hero-card.hero-carousel{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 auto !important;
+    padding:14px !important;
+    border-radius:22px !important;
+  }
+
+  .hero-carousel-track{
+    position:relative !important;
+    width:100% !important;
+    max-width:100% !important;
+    min-height:0 !important;
+    height:auto !important;
+    aspect-ratio: 4 / 5 !important;
+    border-radius:18px !important;
+    overflow:hidden !important;
+    background:#efe9e2 !important;
+  }
+
+  .carousel-image{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:center !important;
+    opacity:0;
+  }
+
+  .carousel-image.active{
+    opacity:1;
+  }
+
+  .carousel-btn{
+    top:50% !important;
+    transform:translateY(-50%) !important;
+    width:44px !important;
+    height:44px !important;
+    font-size:1.45rem !important;
+    z-index:5 !important;
+  }
+
+  .carousel-btn.prev{
+    left:14px !important;
+  }
+
+  .carousel-btn.next{
+    right:14px !important;
+  }
+
+  .carousel-dots{
+    left:50% !important;
+    bottom:14px !important;
+    transform:translateX(-50%) !important;
+    z-index:5 !important;
+  }
+
+  .carousel-dot{
+    width:10px !important;
+    height:10px !important;
+  }
+}
