@@ -1316,3 +1316,58 @@ padding:55px 0 30px;
     max-width:92%;
   }
 }
+
+/* ===================================== */
+/* AJUSTE FINAL — SEÇÃO SOBRE NA HOME */
+/* ===================================== */
+
+.about-preview .section-copy{
+  text-align:left;
+  max-width:620px;
+  margin:0;
+}
+
+.about-preview .section-copy .eyebrow{
+  text-align:left;
+  margin-left:0;
+  margin-right:0;
+}
+
+.about-preview .section-copy h2{
+  text-align:left;
+  margin-left:0;
+  margin-right:0;
+  max-width:14ch;
+}
+
+.about-preview .section-copy p{
+  text-align:left;
+  margin-left:0;
+  margin-right:0;
+  max-width:30ch;
+}
+
+.about-preview .section-copy .btn{
+  margin-left:0;
+  margin-right:0;
+}
+
+.about-preview .split-section{
+  align-items:center;
+}
+
+@media (max-width: 860px){
+  .about-preview .section-copy,
+  .about-preview .section-copy .eyebrow,
+  .about-preview .section-copy h2,
+  .about-preview .section-copy p{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .about-preview .section-copy .btn{
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
