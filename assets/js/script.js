@@ -104,3 +104,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+/* ===== ANIMAÇÃO SCROLL FADE UP ===== */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const fadeElements = document.querySelectorAll(".fade-up");
+
+const observer = new IntersectionObserver(function(entries){
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("visible");
+
+}
+
+});
+
+},{
+threshold:0.2
+});
+
+fadeElements.forEach(el => {
+
+observer.observe(el);
+
+});
+
+});
