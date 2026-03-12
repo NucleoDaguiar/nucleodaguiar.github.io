@@ -22,15 +22,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const images = carousel.querySelectorAll(".carousel-image");
     const prevBtn = carousel.querySelector(".carousel-btn.prev");
     const nextBtn = carousel.querySelector(".carousel-btn.next");
+    const dots = carousel.querySelectorAll(".carousel-dot");
 
     let current = 0;
     let intervalId = null;
-    const autoSlideTime = 4000;
+    const autoSlideTime = 4500;
+
+    function updateDots(index) {
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
+    }
 
     function showSlide(index) {
       images.forEach((img, i) => {
         img.classList.toggle("active", i === index);
       });
+      updateDots(index);
     }
 
     function nextSlide() {
@@ -66,6 +74,16 @@ document.addEventListener("DOMContentLoaded", function () {
       prevBtn.addEventListener("click", function () {
         prevSlide();
         startAutoSlide();
+      });
+    }
+
+    if (dots.length) {
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", function () {
+          current = index;
+          showSlide(current);
+          startAutoSlide();
+        });
       });
     }
 
