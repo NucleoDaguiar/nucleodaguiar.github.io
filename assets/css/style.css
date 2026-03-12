@@ -9,8 +9,7 @@
   --border:rgba(31,74,67,.12);
   --shadow:0 18px 40px rgba(42,36,30,.08);
   --radius:22px;
-  --radius-sm:14px;
-  --container:1180px;
+  --container:1240px;
   --transition:.25s ease;
 }
 
@@ -151,13 +150,13 @@ ul{
 }
 
 .hero-home{
-  padding:80px 0 56px;
+  padding:96px 0 72px;
 }
 
 .hero-grid{
   display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:36px;
+  grid-template-columns:1.05fr .95fr;
+  gap:56px;
   align-items:center;
 }
 
@@ -171,6 +170,14 @@ ul{
   margin-bottom:16px;
 }
 
+.hero-copy,
+.page-hero .container,
+.section-heading,
+.cta-box > div,
+.specialty-head{
+  text-align:center;
+}
+
 .hero-copy h1,
 .page-hero h1,
 .section-heading h2,
@@ -182,29 +189,30 @@ ul{
   font-family:'Cormorant Garamond', serif;
   color:var(--primary);
   line-height:1.08;
+  text-wrap:balance;
+}
+
+.hero-copy{
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .hero-copy h1{
-  font-size:4rem;
+  font-size:clamp(2.6rem, 4vw, 3.5rem);
   max-width:12ch;
-  margin-bottom:18px;
+  margin:0 auto 18px;
 }
 
 .hero-copy p{
-  font-size:1.08rem;
-  max-width:56ch;
+  font-size:1.05rem;
+  max-width:58ch;
   color:var(--muted);
-  margin-bottom:26px;
-}
-
-.hero-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
+  margin:0 auto;
 }
 
 .hero-card{
-  background:linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,255,255,.92));
+  background:linear-gradient(180deg, rgba(255,255,255,.74), rgba(255,255,255,.94));
   border:1px solid rgba(31,74,67,.08);
   border-radius:28px;
   padding:20px;
@@ -242,7 +250,8 @@ ul{
 }
 
 .section-heading{
-  margin-bottom:30px;
+  max-width:980px;
+  margin:0 auto 34px;
 }
 
 .section-heading.center{
@@ -250,11 +259,8 @@ ul{
 }
 
 .section-heading h2{
-  font-size:3rem;
-  max-width:14ch;
-}
-
-.section-heading.center h2{
+  font-size:clamp(2rem, 3vw, 2.8rem);
+  max-width:20ch;
   margin:0 auto;
 }
 
@@ -267,7 +273,7 @@ ul{
 .contact-preview,
 .page-section,
 .cta-section{
-  padding:72px 0;
+  padding:80px 0;
 }
 
 .soft-bg{
@@ -300,7 +306,7 @@ ul{
 .content-card,
 .team-card,
 .team-mini-card{
-  background:rgba(255,255,255,.82);
+  background:rgba(255,255,255,.84);
   border:1px solid var(--border);
   border-radius:var(--radius);
   box-shadow:var(--shadow);
@@ -313,7 +319,7 @@ ul{
 .info-card,
 .mini-info-card,
 .content-card{
-  padding:28px;
+  padding:30px;
 }
 
 .feature-card h3,
@@ -357,18 +363,29 @@ ul{
   align-items:start;
 }
 
+.section-copy{
+  max-width:760px;
+}
+
 .section-copy h2{
-  font-size:3rem;
+  font-size:clamp(2rem, 3vw, 2.8rem);
   margin-bottom:18px;
+  text-align:center;
 }
 
 .section-copy p{
   color:var(--muted);
   margin-bottom:16px;
+  text-align:center;
+}
+
+.section-copy .btn{
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .highlight-box{
-  background:rgba(255,255,255,.82);
+  background:rgba(255,255,255,.84);
   border:1px solid var(--border);
   border-radius:28px;
   padding:28px;
@@ -460,20 +477,22 @@ ul{
 }
 
 .page-hero{
-  padding:92px 0 40px;
-  background:linear-gradient(180deg, rgba(250,247,243,.9), rgba(243,237,230,0));
+  padding:96px 0 40px;
+  background:linear-gradient(180deg, rgba(250,247,243,.94), rgba(243,237,230,0));
+  text-align:center;
 }
 
-.page-hero h1 {
-    font-size: 2.8rem;
-    line-height: 1.08;
-    max-width: 20ch;
+.page-hero h1{
+  font-size:clamp(2.4rem, 3.6vw, 3.1rem);
+  max-width:18ch;
+  margin:0 auto 14px;
 }
 
 .page-hero p{
-  max-width:60ch;
+  max-width:62ch;
   color:var(--muted);
-  font-size:1.06rem;
+  font-size:1.04rem;
+  margin:0 auto;
 }
 
 .narrow{
@@ -504,7 +523,8 @@ ul{
 }
 
 .specialty-head{
-  margin-bottom:16px;
+  max-width:980px;
+  margin:0 auto 16px;
 }
 
 .specialty-tag{
@@ -518,8 +538,9 @@ ul{
 }
 
 .specialty-head h2{
-  font-size:2.5rem;
-  max-width:18ch;
+  font-size:clamp(1.9rem, 3vw, 2.4rem);
+  max-width:22ch;
+  margin:0 auto;
 }
 
 .sub-block{
@@ -542,6 +563,12 @@ ul{
   overflow:hidden;
   display:grid;
   grid-template-columns:260px 1fr;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.team-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 20px 44px rgba(0,0,0,.08);
 }
 
 .team-card img{
@@ -553,10 +580,13 @@ ul{
 
 .team-card-content{
   padding:28px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 
 .team-card-content h2{
-  font-size:2.2rem;
+  font-size:clamp(1.8rem, 2.2vw, 2.1rem);
   margin-bottom:8px;
 }
 
@@ -577,6 +607,11 @@ ul{
   font-size:.9rem;
 }
 
+.team-card-content .btn{
+  align-self:flex-start;
+  margin-top:8px;
+}
+
 .cta-box{
   background:linear-gradient(135deg, rgba(255,255,255,.88), rgba(250,247,243,.98));
   border:1px solid var(--border);
@@ -587,17 +622,27 @@ ul{
   align-items:center;
   justify-content:space-between;
   gap:24px;
+  text-align:center;
+}
+
+.cta-box > div{
+  max-width:900px;
+  margin:0 auto;
 }
 
 .cta-box h2{
-  font-size:2.6rem;
+  font-size:clamp(2rem, 3vw, 2.6rem);
   margin-bottom:10px;
-  max-width:14ch;
+  max-width:18ch;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .cta-box p{
   color:var(--muted);
   max-width:52ch;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .site-footer{
@@ -665,20 +710,6 @@ ul{
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
 
-  .hero-copy h1{
-    font-size:3.2rem;
-  }
-
-  .page-hero h1{
-    font-size:3rem;
-  }
-
-  .section-heading h2,
-  .section-copy h2,
-  .cta-box h2{
-    font-size:2.5rem;
-  }
-
   .team-card img{
     height:340px;
   }
@@ -716,24 +747,14 @@ ul{
     grid-template-columns:1fr;
   }
 
-  .hero-copy h1{
-    font-size:2.8rem;
-  }
-
-  .page-hero h1{
-    font-size:2.6rem;
-  }
-
-  .section-heading h2,
-  .section-copy h2,
-  .cta-box h2,
-  .specialty-head h2{
-    font-size:2.15rem;
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:32px;
   }
 
   .cta-box{
     flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
   }
 
   .header-wrap{
@@ -755,16 +776,8 @@ ul{
     padding:56px 0;
   }
 
-  .hero-copy h1{
-    font-size:2.3rem;
-  }
-
   .page-hero{
     padding:72px 0 28px;
-  }
-
-  .page-hero h1{
-    font-size:2.2rem;
   }
 
   .btn{
@@ -773,6 +786,11 @@ ul{
 
   .hero-actions{
     flex-direction:column;
+    align-items:center;
+  }
+
+  .team-card-content .btn{
+    align-self:stretch;
   }
 
   .floating-whatsapp{
@@ -780,709 +798,4 @@ ul{
     bottom:14px;
     padding:12px 16px;
   }
-}
-
-/* ===== AJUSTES FINOS DE TIPOGRAFIA E ALINHAMENTO ===== */
-
-.hero-copy,
-.page-hero,
-.section-heading,
-.section-copy,
-.cta-box,
-.specialty-head {
-  text-align: center;
-}
-
-.hero-copy,
-.page-hero .container,
-.section-heading,
-.section-copy,
-.cta-box > div,
-.specialty-head {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-copy h1,
-.page-hero h1,
-.section-heading h2,
-.section-copy h2,
-.cta-box h2,
-.specialty-head h2,
-.team-card-content h2,
-.content-card h2 {
-  max-width: 18ch;
-  margin-left: auto;
-  margin-right: auto;
-  text-wrap: balance;
-}
-
-.hero-copy p,
-.page-hero p,
-.section-heading p,
-.section-copy p,
-.cta-box p {
-  max-width: 60ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-actions {
-  justify-content: center;
-}
-
-.section-copy .btn,
-.cta-box .btn {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.page-hero .eyebrow,
-.section-heading .eyebrow,
-.section-copy .eyebrow,
-.hero-copy .eyebrow {
-  display: block;
-  text-align: center;
-}
-
-/* ===== TAMANHOS MAIS ELEGANTES PARA DESKTOP ===== */
-
-.hero-copy h1 {
-  font-size: clamp(2.8rem, 4vw, 3.8rem);
-  max-width: 14ch;
-}
-
-.page-hero h1 {
-  font-size: clamp(2.4rem, 3.5vw, 3.2rem);
-  max-width: 16ch;
-}
-
-.section-heading h2,
-.section-copy h2,
-.cta-box h2 {
-  font-size: clamp(2rem, 3vw, 2.8rem);
-  max-width: 18ch;
-}
-
-.specialty-head h2 {
-  font-size: clamp(1.9rem, 2.8vw, 2.5rem);
-  max-width: 20ch;
-}
-
-.team-card-content h2,
-.content-card h2 {
-  font-size: clamp(1.8rem, 2.2vw, 2.2rem);
-}
-
-/* ===== AJUSTE DE BLOCOS GRANDES ===== */
-
-.page-hero {
-  text-align: center;
-}
-
-.page-hero .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section-heading {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section-copy {
-  max-width: 760px;
-}
-
-.cta-box {
-  text-align: center;
-}
-
-.cta-box {
-  flex-direction: column;
-  align-items: center;
-}
-
-.cta-box .btn {
-  margin-top: 10px;
-}
-
-.specialty-head {
-  max-width: 850px;
-}
-
-.team-card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.team-card-content .btn {
-  align-self: flex-start;
-}
-
-/* ===== MELHORIAS PARA TELAS MÉDIAS ===== */
-
-@media (max-width: 1024px) {
-  .hero-copy h1 {
-    font-size: clamp(2.5rem, 4.6vw, 3.2rem);
-  }
-
-  .page-hero h1 {
-    font-size: clamp(2.2rem, 4vw, 2.8rem);
-  }
-
-  .section-heading h2,
-  .section-copy h2,
-  .cta-box h2 {
-    font-size: clamp(1.9rem, 3.4vw, 2.4rem);
-  }
-
-  .specialty-head h2 {
-    font-size: clamp(1.8rem, 3vw, 2.2rem);
-  }
-}
-
-/* ===== OTIMIZAÇÃO PARA MOBILE ===== */
-
-@media (max-width: 768px) {
-  .hero-copy,
-  .page-hero,
-  .section-heading,
-  .section-copy,
-  .cta-box,
-  .specialty-head {
-    text-align: center;
-  }
-
-  .hero-copy h1 {
-    font-size: 2.2rem;
-    max-width: 12ch;
-  }
-
-  .page-hero h1 {
-    font-size: 2rem;
-    max-width: 14ch;
-  }
-
-  .section-heading h2,
-  .section-copy h2,
-  .cta-box h2,
-  .specialty-head h2 {
-    font-size: 1.8rem;
-    max-width: 16ch;
-  }
-
-  .team-card-content h2,
-  .content-card h2 {
-    font-size: 1.6rem;
-  }
-
-  .hero-copy p,
-  .page-hero p,
-  .section-heading p,
-  .section-copy p,
-  .cta-box p {
-    font-size: 0.98rem;
-    max-width: 34ch;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .team-card-content .btn {
-    align-self: center;
-  }
-}
-
-/* ===== MOBILE MENOR ===== */
-
-@media (max-width: 480px) {
-  .hero-copy h1 {
-    font-size: 1.95rem;
-  }
-
-  .page-hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .section-heading h2,
-  .section-copy h2,
-  .cta-box h2,
-  .specialty-head h2 {
-    font-size: 1.65rem;
-  }
-
-  .hero-copy p,
-  .page-hero p,
-  .section-heading p,
-  .section-copy p,
-  .cta-box p {
-    font-size: 0.95rem;
-  }
-}
-
-/* =========================================================
-   AJUSTES EXCLUSIVOS PARA COMPUTADOR / DESKTOP
-   Aplica apenas em telas largas
-   ========================================================= */
-
-@media screen and (min-width: 1025px) {
-
-  /* Largura geral dos blocos centrais */
-  .page-hero .container,
-  .section-heading,
-  .section-copy,
-  .specialty-head,
-  .cta-box > div {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  /* Home */
-  .hero-copy {
-    max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .hero-copy h1 {
-    font-size: 3.2rem;
-    line-height: 1.08;
-    max-width: 12ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-copy p {
-    max-width: 58ch;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .hero-actions {
-    justify-content: center;
-  }
-
-  /* Títulos das páginas internas */
-  .page-hero {
-    padding: 90px 0 50px;
-    text-align: center;
-  }
-
-  .page-hero h1 {
-    font-size: 2.9rem;
-    line-height: 1.1;
-    max-width: 18ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .page-hero p {
-    max-width: 62ch;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 1.02rem;
-  }
-
-  /* Títulos de seção */
-  .section-heading h2,
-  .section-copy h2,
-  .cta-box h2 {
-    font-size: 2.4rem;
-    line-height: 1.12;
-    max-width: 20ch;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .section-heading p,
-  .section-copy p,
-  .cta-box p {
-    max-width: 60ch;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  /* Especialidades */
-  .specialty-head {
-    text-align: center;
-    max-width: 980px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .specialty-head h2 {
-    font-size: 2.2rem;
-    line-height: 1.12;
-    max-width: 22ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .specialty-block {
-    max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .content-card {
-    max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Sobre / CTA */
-  .cta-box {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cta-box .btn,
-  .section-copy .btn {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Equipe */
-  .team-card-content h2 {
-    font-size: 1.95rem;
-    line-height: 1.12;
-    max-width: 20ch;
-  }
-
-  /* Melhor uso do espaço horizontal geral */
-  .split-section {
-    align-items: center;
-  }
-}
-
-/* =========================================================
-   DESKTOP PREMIUM LAYOUT
-   Refinamento visual para telas grandes
-   Não afeta mobile
-   ========================================================= */
-
-@media screen and (min-width: 1200px) {
-
-  /* largura geral do site */
-  .container {
-    max-width: 1240px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* hero mais elegante */
-  .page-hero {
-    padding-top: 110px;
-    padding-bottom: 70px;
-  }
-
-  .hero-copy {
-    max-width: 820px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .hero-copy h1 {
-    font-size: 3.4rem;
-    line-height: 1.06;
-    letter-spacing: -0.01em;
-    max-width: 12ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-copy p {
-    font-size: 1.05rem;
-    max-width: 60ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-actions {
-    justify-content: center;
-    margin-top: 28px;
-  }
-
-  /* páginas internas */
-  .page-hero h1 {
-    font-size: 3rem;
-    line-height: 1.08;
-    max-width: 18ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .page-hero p {
-    font-size: 1.05rem;
-    max-width: 64ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* títulos de seção */
-  .section-heading {
-    margin-bottom: 70px;
-  }
-
-  .section-heading h2,
-  .section-copy h2 {
-    font-size: 2.6rem;
-    line-height: 1.1;
-    max-width: 20ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .section-heading p,
-  .section-copy p {
-    max-width: 62ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* espaçamento entre seções */
-  section {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-
-  /* cards de especialidades */
-  .content-card {
-    max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 48px;
-  }
-
-  /* equipe */
-  .team-grid {
-    gap: 48px;
-  }
-
-  .team-card {
-    padding: 36px;
-  }
-
-  .team-card-content h2 {
-    font-size: 2rem;
-    line-height: 1.1;
-  }
-
-  /* melhorar leitura geral */
-  p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-  }
-
-  /* botão principal */
-  .btn-primary {
-    padding: 14px 26px;
-    font-size: 0.95rem;
-  }
-
-  /* botão whatsapp flutuante */
-  .whatsapp-float {
-    right: 30px;
-    bottom: 30px;
-  }
-
-}
-/* =====================================================
-   AJUSTE DA HOME PARA COMPUTADOR (DESKTOP)
-   melhora título, espaçamento e leitura
-   ===================================================== */
-
-@media screen and (min-width: 1025px) {
-
-  /* primeira seção da home */
-  main section:first-of-type {
-    padding-top: 120px;
-    padding-bottom: 90px;
-  }
-
-  /* título principal da home */
-  main section:first-of-type h1 {
-    font-size: 3.2rem;
-    line-height: 1.08;
-    max-width: 12ch;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  /* texto abaixo do título */
-  main section:first-of-type p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    max-width: 56ch;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  /* espaço entre texto e card lateral */
-  main section:first-of-type .container {
-    gap: 70px;
-    align-items: center;
-  }
-
-}
-
-/* ========================================
-   CONTAINER PROFISSIONAL
-======================================== */
-
-.container{
-max-width:1280px;
-margin:0 auto;
-padding:0 24px;
-}
-
-
-/* ========================================
-   TIPOGRAFIA REFINADA
-======================================== */
-
-h1{
-font-size:3rem;
-line-height:1.1;
-letter-spacing:-0.02em;
-}
-
-h2{
-font-size:2rem;
-margin-bottom:16px;
-}
-
-h3{
-font-size:1.35rem;
-}
-
-p{
-font-size:1rem;
-line-height:1.7;
-color:#4a4a4a;
-}
-
-
-/* ========================================
-   HERO DESKTOP
-======================================== */
-
-@media (min-width:1024px){
-
-.hero{
-padding-top:120px;
-padding-bottom:90px;
-}
-
-.hero-grid{
-display:grid;
-grid-template-columns:1fr 420px;
-gap:70px;
-align-items:center;
-}
-
-.hero-copy{
-max-width:640px;
-}
-
-.hero-copy h1{
-font-size:3rem;
-max-width:14ch;
-}
-
-.hero-copy p{
-max-width:52ch;
-}
-
-}
-
-
-/* ========================================
-   ESPAÇAMENTO ENTRE SEÇÕES
-======================================== */
-
-section{
-padding:80px 0;
-}
-
-
-/* ========================================
-   CARDS DA EQUIPE
-======================================== */
-
-.team-card{
-
-background:#fff;
-border-radius:14px;
-padding:28px;
-box-shadow:0 10px 30px rgba(0,0,0,0.05);
-
-transition:all .25s ease;
-}
-
-.team-card:hover{
-
-transform:translateY(-4px);
-box-shadow:0 16px 40px rgba(0,0,0,0.08);
-
-}
-
-
-/* ========================================
-   BOTÃO WHATSAPP
-======================================== */
-
-.whatsapp-button{
-
-background:#1F4A43;
-color:#fff;
-padding:14px 24px;
-border-radius:8px;
-font-weight:600;
-transition:all .2s ease;
-
-}
-
-.whatsapp-button:hover{
-
-background:#183a34;
-
-}
-
-
-/* ========================================
-   MOBILE
-======================================== */
-
-@media (max-width:768px){
-
-h1{
-font-size:2.2rem;
-}
-
-section{
-padding:60px 0;
-}
-
-.hero-grid{
-grid-template-columns:1fr;
-}
-
 }
