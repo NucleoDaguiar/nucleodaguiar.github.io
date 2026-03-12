@@ -781,3 +781,247 @@ ul{
     padding:12px 16px;
   }
 }
+
+/* ===== AJUSTES FINOS DE TIPOGRAFIA E ALINHAMENTO ===== */
+
+.hero-copy,
+.page-hero,
+.section-heading,
+.section-copy,
+.cta-box,
+.specialty-head {
+  text-align: center;
+}
+
+.hero-copy,
+.page-hero .container,
+.section-heading,
+.section-copy,
+.cta-box > div,
+.specialty-head {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-copy h1,
+.page-hero h1,
+.section-heading h2,
+.section-copy h2,
+.cta-box h2,
+.specialty-head h2,
+.team-card-content h2,
+.content-card h2 {
+  max-width: 18ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: balance;
+}
+
+.hero-copy p,
+.page-hero p,
+.section-heading p,
+.section-copy p,
+.cta-box p {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-actions {
+  justify-content: center;
+}
+
+.section-copy .btn,
+.cta-box .btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-hero .eyebrow,
+.section-heading .eyebrow,
+.section-copy .eyebrow,
+.hero-copy .eyebrow {
+  display: block;
+  text-align: center;
+}
+
+/* ===== TAMANHOS MAIS ELEGANTES PARA DESKTOP ===== */
+
+.hero-copy h1 {
+  font-size: clamp(2.8rem, 4vw, 3.8rem);
+  max-width: 14ch;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.4rem, 3.5vw, 3.2rem);
+  max-width: 16ch;
+}
+
+.section-heading h2,
+.section-copy h2,
+.cta-box h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  max-width: 18ch;
+}
+
+.specialty-head h2 {
+  font-size: clamp(1.9rem, 2.8vw, 2.5rem);
+  max-width: 20ch;
+}
+
+.team-card-content h2,
+.content-card h2 {
+  font-size: clamp(1.8rem, 2.2vw, 2.2rem);
+}
+
+/* ===== AJUSTE DE BLOCOS GRANDES ===== */
+
+.page-hero {
+  text-align: center;
+}
+
+.page-hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-heading {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-copy {
+  max-width: 760px;
+}
+
+.cta-box {
+  text-align: center;
+}
+
+.cta-box {
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-box .btn {
+  margin-top: 10px;
+}
+
+.specialty-head {
+  max-width: 850px;
+}
+
+.team-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-card-content .btn {
+  align-self: flex-start;
+}
+
+/* ===== MELHORIAS PARA TELAS MÉDIAS ===== */
+
+@media (max-width: 1024px) {
+  .hero-copy h1 {
+    font-size: clamp(2.5rem, 4.6vw, 3.2rem);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2.2rem, 4vw, 2.8rem);
+  }
+
+  .section-heading h2,
+  .section-copy h2,
+  .cta-box h2 {
+    font-size: clamp(1.9rem, 3.4vw, 2.4rem);
+  }
+
+  .specialty-head h2 {
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+  }
+}
+
+/* ===== OTIMIZAÇÃO PARA MOBILE ===== */
+
+@media (max-width: 768px) {
+  .hero-copy,
+  .page-hero,
+  .section-heading,
+  .section-copy,
+  .cta-box,
+  .specialty-head {
+    text-align: center;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.2rem;
+    max-width: 12ch;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+    max-width: 14ch;
+  }
+
+  .section-heading h2,
+  .section-copy h2,
+  .cta-box h2,
+  .specialty-head h2 {
+    font-size: 1.8rem;
+    max-width: 16ch;
+  }
+
+  .team-card-content h2,
+  .content-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-copy p,
+  .page-hero p,
+  .section-heading p,
+  .section-copy p,
+  .cta-box p {
+    font-size: 0.98rem;
+    max-width: 34ch;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-card-content .btn {
+    align-self: center;
+  }
+}
+
+/* ===== MOBILE MENOR ===== */
+
+@media (max-width: 480px) {
+  .hero-copy h1 {
+    font-size: 1.95rem;
+  }
+
+  .page-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .section-heading h2,
+  .section-copy h2,
+  .cta-box h2,
+  .specialty-head h2 {
+    font-size: 1.65rem;
+  }
+
+  .hero-copy p,
+  .page-hero p,
+  .section-heading p,
+  .section-copy p,
+  .cta-box p {
+    font-size: 0.95rem;
+  }
+}
