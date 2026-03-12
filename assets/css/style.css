@@ -1342,3 +1342,147 @@ ul{
   }
 
 }
+
+/* ========================================
+   CONTAINER PROFISSIONAL
+======================================== */
+
+.container{
+max-width:1280px;
+margin:0 auto;
+padding:0 24px;
+}
+
+
+/* ========================================
+   TIPOGRAFIA REFINADA
+======================================== */
+
+h1{
+font-size:3rem;
+line-height:1.1;
+letter-spacing:-0.02em;
+}
+
+h2{
+font-size:2rem;
+margin-bottom:16px;
+}
+
+h3{
+font-size:1.35rem;
+}
+
+p{
+font-size:1rem;
+line-height:1.7;
+color:#4a4a4a;
+}
+
+
+/* ========================================
+   HERO DESKTOP
+======================================== */
+
+@media (min-width:1024px){
+
+.hero{
+padding-top:120px;
+padding-bottom:90px;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 420px;
+gap:70px;
+align-items:center;
+}
+
+.hero-copy{
+max-width:640px;
+}
+
+.hero-copy h1{
+font-size:3rem;
+max-width:14ch;
+}
+
+.hero-copy p{
+max-width:52ch;
+}
+
+}
+
+
+/* ========================================
+   ESPAÇAMENTO ENTRE SEÇÕES
+======================================== */
+
+section{
+padding:80px 0;
+}
+
+
+/* ========================================
+   CARDS DA EQUIPE
+======================================== */
+
+.team-card{
+
+background:#fff;
+border-radius:14px;
+padding:28px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+
+transition:all .25s ease;
+}
+
+.team-card:hover{
+
+transform:translateY(-4px);
+box-shadow:0 16px 40px rgba(0,0,0,0.08);
+
+}
+
+
+/* ========================================
+   BOTÃO WHATSAPP
+======================================== */
+
+.whatsapp-button{
+
+background:#1F4A43;
+color:#fff;
+padding:14px 24px;
+border-radius:8px;
+font-weight:600;
+transition:all .2s ease;
+
+}
+
+.whatsapp-button:hover{
+
+background:#183a34;
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width:768px){
+
+h1{
+font-size:2.2rem;
+}
+
+section{
+padding:60px 0;
+}
+
+.hero-grid{
+grid-template-columns:1fr;
+}
+
+}
