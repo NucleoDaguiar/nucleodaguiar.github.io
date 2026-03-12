@@ -1371,3 +1371,55 @@ padding:55px 0 30px;
     margin-right:auto;
   }
 }
+
+/* ===================================== */
+/* CORREÇÃO HORIZONTAL — HERO CONTATO */
+/* ===================================== */
+
+.page-contato .page-hero .container{
+  max-width:1200px;
+}
+
+/* título */
+
+.page-contato .page-hero h1{
+  max-width:950px;
+  margin-left:auto;
+  margin-right:auto;
+
+  font-size:clamp(42px,4.5vw,56px);
+  line-height:1.15;
+
+  text-wrap:normal;
+  white-space:normal;
+}
+
+/* subtítulo */
+
+.page-contato .page-hero p{
+  max-width:720px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* espaço vertical */
+
+.page-contato .page-hero{
+  padding:65px 0 40px;
+}
+
+/* mobile */
+
+@media (max-width: 860px){
+
+.page-contato .page-hero h1{
+font-size:34px;
+line-height:1.2;
+max-width:92%;
+}
+
+.page-contato .page-hero p{
+max-width:92%;
+}
+
+}
