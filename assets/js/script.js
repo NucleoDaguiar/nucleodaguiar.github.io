@@ -1,14 +1,10 @@
-/* CONFIGURAÇÕES EDITÁVEIS */
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".main-nav");
 
-const CONFIG = {
-
-WHATSAPP: "https://wa.me/5562991787997",
-
-INSTAGRAM: "https://instagram.com/nucleo.daguiar",
-
-ENDERECO: "Av. T-1, 1536 - Setor Bueno, Goiânia",
-
-LINK_MAPS: "https://maps.app.goo.gl/51cjGwdhZXvykcBDA"
-
-
-};
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () {
+      nav.classList.toggle("open");
+    });
+  }
+});
