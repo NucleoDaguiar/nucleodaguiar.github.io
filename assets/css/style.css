@@ -1219,3 +1219,52 @@ max-width:100%;
     padding:16px 0 44px;
   }
 }
+
+/* =============================== */
+/* AJUSTE HERO DA PÁGINA SOBRE */
+/* =============================== */
+
+.page-hero .container{
+    max-width:1100px;
+    text-align:center;
+}
+
+/* título principal */
+
+.page-hero h1{
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+
+    font-size:clamp(42px,4.6vw,56px);
+    line-height:1.18;
+}
+
+/* texto abaixo */
+
+.page-hero p{
+    max-width:720px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* reduz espaço vertical exagerado */
+
+.page-hero{
+    padding:70px 0 40px;
+}
+
+/* mobile */
+
+@media(max-width:860px){
+
+.page-hero h1{
+font-size:34px;
+line-height:1.25;
+}
+
+.page-hero{
+padding:55px 0 30px;
+}
+
+}
