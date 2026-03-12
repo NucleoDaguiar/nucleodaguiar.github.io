@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
-      nav.classList.toggle("open");
+      const isOpen = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
   }
 });
