@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css?v=3" />
 </head>
 <body>
   <header class="site-header">
@@ -17,7 +17,9 @@
         <span class="brand-title">Núcleo D’Aguiar</span>
         <span class="brand-subtitle">Psicologia, Neurociências & Associados</span>
       </a>
+
       <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+
       <nav class="main-nav" id="menu-principal">
         <a href="index.html">Início</a>
         <a href="sobre.html">Sobre</a>
@@ -26,13 +28,14 @@
         <a href="contato.html" class="active">Contato</a>
         <a href="local.html">Local</a>
       </nav>
+
       <a href="https://wa.me/5562991787997" target="_blank" class="btn btn-primary desktop-cta">Agendar consulta</a>
     </div>
   </header>
 
   <main>
     <section class="page-hero">
-      <div class="container">
+      <div class="container fade-up">
         <span class="eyebrow">Contato</span>
         <h1>Estamos disponíveis para orientar você sobre o início do atendimento</h1>
         <p>Entre em contato com a clínica para agendamento, direcionamento e esclarecimento de dúvidas.</p>
@@ -40,24 +43,52 @@
     </section>
 
     <section class="page-section">
-      <div class="container cards-grid cards-2">
-        <article class="content-card">
-          <h2>Fale com a clínica</h2>
-          <p><strong>WhatsApp:</strong> <a href="https://wa.me/5562991787997" target="_blank">Clique para conversar</a></p>
-          <p><strong>Instagram:</strong> <a href="https://instagram.com/nucleo.daguiar" target="_blank">@nucleo.daguiar</a></p>
-          <p><strong>Endereço:</strong> Av. T-1, 1536 - Setor Bueno - Galeria Donato Ferreira, Goiânia - GO</p>
-          <a href="https://wa.me/5562991787997" target="_blank" class="btn btn-primary">Agendar consulta</a>
-        </article>
+      <div class="container">
+        <div class="cards-grid cards-2">
 
-        <article class="content-card">
-          <h2>Como funciona o primeiro contato</h2>
-          <p>Após sua mensagem, nossa equipe orienta você sobre modalidade, especialidade e encaminhamento ao profissional mais adequado.</p>
-          <ul class="styled-list">
-            <li>Atendimento inicial via WhatsApp</li>
-            <li>Direcionamento conforme demanda</li>
-            <li>Agendamento presencial ou online</li>
-          </ul>
-        </article>
+          <article class="content-card fade-up">
+            <h2>Fale com a clínica</h2>
+            <p>
+              Nossa equipe está disponível para orientar você sobre modalidades de atendimento,
+              especialidades e encaminhamento para o profissional mais adequado.
+            </p>
+
+            <div class="contact-list">
+              <p><strong>WhatsApp:</strong> <a href="https://wa.me/5562991787997" target="_blank">Clique para conversar</a></p>
+              <p><strong>Instagram:</strong> <a href="https://instagram.com/nucleo.daguiar" target="_blank">@nucleo.daguiar</a></p>
+              <p><strong>Endereço:</strong> Av. T-1, 1536 - Setor Bueno - Galeria Donato Ferreira, Goiânia - GO</p>
+            </div>
+
+            <a href="https://wa.me/5562991787997" target="_blank" class="btn btn-primary">Agendar consulta</a>
+          </article>
+
+          <article class="content-card fade-up">
+            <h2>Como funciona o primeiro contato</h2>
+            <p>
+              Após sua mensagem, nossa equipe faz uma triagem inicial para compreender sua necessidade
+              e orientar o melhor caminho de atendimento.
+            </p>
+
+            <ul class="styled-list">
+              <li>Atendimento inicial via WhatsApp</li>
+              <li>Direcionamento conforme demanda e modalidade</li>
+              <li>Agendamento presencial ou online</li>
+              <li>Encaminhamento ao profissional mais adequado</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-box fade-up">
+        <div>
+          <span class="eyebrow">Agendamento</span>
+          <h2>Fale com a clínica e receba orientação sobre o melhor atendimento para você</h2>
+          <p>Nosso atendimento inicial ajuda a identificar o profissional e a modalidade mais adequados para sua necessidade.</p>
+        </div>
+        <a href="https://wa.me/5562991787997" target="_blank" class="btn btn-primary">Falar com a clínica</a>
       </div>
     </section>
   </main>
@@ -67,7 +98,9 @@
       <div>
         <h3>Núcleo D’Aguiar</h3>
         <p>Psicologia, Neurociências & Associados</p>
+        <p>Cuidado psicológico com base científica, escuta qualificada e acolhimento.</p>
       </div>
+
       <div>
         <h4>Navegação</h4>
         <ul>
@@ -77,6 +110,7 @@
           <li><a href="equipe.html">Equipe</a></li>
         </ul>
       </div>
+
       <div>
         <h4>Contato</h4>
         <ul>
@@ -86,12 +120,13 @@
         </ul>
       </div>
     </div>
+
     <div class="container footer-bottom">
       <p>© Núcleo D’Aguiar. Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <a href="https://wa.me/5562991787997" target="_blank" class="floating-whatsapp" aria-label="Falar no WhatsApp">WhatsApp</a>
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js?v=3"></script>
 </body>
 </html>
