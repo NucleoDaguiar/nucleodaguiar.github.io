@@ -13,14 +13,14 @@
 <body>
   <header class="site-header">
     <div class="container header-wrap">
-      <a href="index.html" class="brand">
+      <a href="index.html" class="brand" aria-label="Página inicial do Núcleo D’Aguiar">
         <span class="brand-title">Núcleo D’Aguiar</span>
         <span class="brand-subtitle">Psicologia, Neurociências & Associados</span>
       </a>
 
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
 
-      <nav class="main-nav">
+      <nav class="main-nav" id="menu-principal">
         <a href="index.html" class="active">Início</a>
         <a href="sobre.html">Sobre</a>
         <a href="especialidades.html">Especialidades</a>
@@ -43,11 +43,6 @@
             Atendimento psicológico baseado em evidências para crianças, adolescentes e adultos,
             com escuta qualificada, cuidado ético e proposta clínica humanizada.
           </p>
-
-          <div class="hero-actions">
-            <a href="https://wa.me/5562991787997" target="_blank" class="btn btn-primary">Agendar consulta</a>
-            <a href="contato.html" class="btn btn-secondary">Falar com a clínica</a>
-          </div>
         </div>
 
         <div class="hero-card">
@@ -126,7 +121,7 @@
 
     <section class="specialties-preview">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading center">
           <span class="eyebrow">Especialidades</span>
           <h2>Atendimento psicológico e avaliações especializadas para diferentes fases da vida</h2>
         </div>
@@ -176,32 +171,32 @@
 
     <section class="team-preview">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading center">
           <span class="eyebrow">Equipe</span>
           <h2>Profissionais comprometidos com ética, escuta qualificada e cuidado baseado em evidências</h2>
         </div>
 
         <div class="cards-grid cards-4">
           <article class="team-mini-card">
-            <img src="assets/img/ereniz.jpg" alt="Ereniz Castro">
+            <img src="assets/img/ereniz.jpg" alt="Foto da psicóloga Ereniz Castro">
             <h3>Ereniz Castro</h3>
             <p>Psicóloga | CRP 09/21728</p>
           </article>
 
           <article class="team-mini-card">
-            <img src="assets/img/ana-caroline.jpg" alt="Ana Caroline Sousa">
+            <img src="assets/img/ana-caroline.jpg" alt="Foto da psicóloga Ana Caroline Sousa">
             <h3>Ana Caroline Sousa</h3>
             <p>Psicóloga | CRP 09/21958</p>
           </article>
 
           <article class="team-mini-card">
-            <img src="assets/img/estevao.jpg" alt="Estevão Ortiz Ribeiro">
+            <img src="assets/img/estevao.jpg" alt="Foto do psicólogo Estevão Ortiz Ribeiro">
             <h3>Estevão Ortiz Ribeiro</h3>
             <p>Psicólogo | CRP 06/149544</p>
           </article>
 
           <article class="team-mini-card">
-            <img src="assets/img/gessica.jpg" alt="Gessica Pires">
+            <img src="assets/img/gessica.jpg" alt="Foto da psicóloga Gessica Pires">
             <h3>Gessica Pires</h3>
             <p>Psicóloga | CRP 04/82970</p>
           </article>
@@ -254,8 +249,6 @@
             <p><strong>Instagram:</strong> <a href="https://instagram.com/nucleo.daguiar" target="_blank">@nucleo.daguiar</a></p>
             <p><strong>Endereço:</strong> Av. T-1, 1536 - Setor Bueno - Galeria Donato Ferreira, Goiânia - GO</p>
           </div>
-
-          <a href="https://wa.me/5562991787997" target="_blank" class="btn btn-primary">Agendar consulta</a>
         </div>
 
         <div class="map-box">
@@ -263,7 +256,8 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.5735804825417!2d-49.273861!3d-16.698208699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef149ebe3be7b%3A0x87077531e3fd5598!2sN%C3%BAcleo%20D&#39;Aguiar%20-%20Psicologia%2C%20Neuroci%C3%AAncias%20%26%20Associados!5e0!3m2!1spt-BR!2sbr!4v1773277249448!5m2!1spt-BR!2sbr"
             loading="lazy"
             allowfullscreen=""
-            referrerpolicy="no-referrer-when-downgrade">
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa da localização do Núcleo D’Aguiar">
           </iframe>
         </div>
       </div>
