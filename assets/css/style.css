@@ -2000,3 +2000,301 @@ ul{
   }
 }
 
+/* =========================================================
+   MELHORIA 1 — HEADER PREMIUM / GLASS EFFECT
+   ========================================================= */
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:rgba(250,247,243,.78);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(31,74,67,.08);
+  box-shadow:0 10px 30px rgba(31,74,67,.05);
+}
+
+.header-wrap{
+  min-height:92px;
+}
+
+.desktop-cta{
+  box-shadow:0 16px 30px rgba(31,74,67,.16);
+}
+
+/* =========================================================
+   MELHORIA 2 — ANIMAÇÃO SUAVE DAS SEÇÕES
+   ========================================================= */
+
+.fade-up{
+  opacity:0;
+  transform:translateY(22px);
+  transition:opacity .8s ease, transform .8s ease;
+}
+
+.fade-up.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+section{
+  will-change:transform, opacity;
+}
+
+/* =========================================================
+   MELHORIA 3 — HERO PREMIUM
+   ========================================================= */
+
+.hero-home{
+  position:relative;
+  overflow:hidden;
+  padding:64px 0 56px;
+}
+
+.hero-home::before{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(196,130,98,.10) 0%, rgba(196,130,98,0) 70%);
+  top:-180px;
+  left:-140px;
+  pointer-events:none;
+}
+
+.hero-home::after{
+  content:"";
+  position:absolute;
+  width:440px;
+  height:440px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(31,74,67,.08) 0%, rgba(31,74,67,0) 70%);
+  right:-120px;
+  bottom:-180px;
+  pointer-events:none;
+}
+
+.hero-grid{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:minmax(520px, 1fr) minmax(440px, 560px);
+  gap:64px;
+  align-items:center;
+}
+
+.hero-copy{
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+.hero-copy h1{
+  font-size:clamp(3rem, 4vw, 4.3rem);
+  line-height:1.01;
+  max-width:9ch;
+  margin:0 auto 18px;
+}
+
+.hero-copy p{
+  font-size:1.08rem;
+  max-width:48ch;
+  margin:0 auto 20px;
+  color:var(--muted);
+}
+
+.hero-mini-highlights{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin-top:22px;
+}
+
+.hero-mini-highlights span{
+  display:inline-flex;
+  align-items:center;
+  padding:10px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.7);
+  border:1px solid rgba(31,74,67,.08);
+  color:var(--primary);
+  font-size:.92rem;
+  font-weight:600;
+  box-shadow:0 8px 20px rgba(0,0,0,.04);
+}
+
+.hero-card{
+  position:relative;
+  background:linear-gradient(180deg, rgba(255,255,255,.78), rgba(255,255,255,.96));
+  border:1px solid rgba(31,74,67,.08);
+  border-radius:32px;
+  padding:20px;
+  box-shadow:0 24px 60px rgba(42,36,30,.10);
+}
+
+.hero-carousel-track{
+  position:relative;
+  border-radius:24px;
+  overflow:hidden;
+  min-height:540px;
+  background:#efe9e2;
+}
+
+.carousel-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:3;
+  width:48px;
+  height:48px;
+  border:none;
+  border-radius:999px;
+  background:rgba(31,74,67,.88);
+  color:#fff;
+  font-size:1.7rem;
+  line-height:1;
+  cursor:pointer;
+  box-shadow:0 14px 28px rgba(0,0,0,.16);
+  transition:transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.carousel-btn:hover{
+  transform:translateY(-50%) scale(1.06);
+  background:var(--primary);
+  box-shadow:0 18px 36px rgba(0,0,0,.22);
+}
+
+.hero-note{
+  position:absolute;
+  left:22px;
+  right:22px;
+  bottom:18px;
+  z-index:3;
+  background:rgba(250,247,243,.88);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-radius:22px;
+  padding:18px 20px;
+  box-shadow:0 10px 26px rgba(0,0,0,.08);
+}
+
+.hero-note strong{
+  display:block;
+  color:var(--primary);
+  margin-bottom:6px;
+}
+
+.hero-note p{
+  color:var(--muted);
+  font-size:.98rem;
+}
+
+/* =========================================================
+   REFINO GLOBAL DE SEÇÕES
+   ========================================================= */
+
+.page-hero{
+  padding:68px 0 24px;
+}
+
+.page-hero .container{
+  max-width:1040px;
+}
+
+.page-hero h1{
+  font-size:clamp(2.3rem, 3vw, 3.1rem);
+  max-width:16ch;
+  margin:0 auto 14px;
+}
+
+.page-hero p{
+  max-width:58ch;
+  margin:0 auto;
+}
+
+.page-section,
+.cta-section{
+  padding:56px 0;
+}
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 1180px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:34px;
+  }
+
+  .hero-copy{
+    max-width:760px;
+  }
+
+  .hero-copy h1{
+    max-width:11ch;
+  }
+}
+
+@media (max-width: 860px){
+  .site-header{
+    background:rgba(250,247,243,.94);
+    backdrop-filter:blur(10px);
+  }
+}
+
+@media (max-width: 640px){
+  .hero-home{
+    padding:42px 0 28px;
+  }
+
+  .hero-home::before,
+  .hero-home::after{
+    display:none;
+  }
+
+  .hero-copy h1{
+    font-size:2.2rem;
+    max-width:11ch;
+  }
+
+  .hero-copy p{
+    font-size:.98rem;
+    max-width:32ch;
+  }
+
+  .hero-mini-highlights{
+    gap:8px;
+  }
+
+  .hero-mini-highlights span{
+    font-size:.84rem;
+    padding:8px 12px;
+  }
+
+  .hero-card{
+    padding:14px;
+    border-radius:22px;
+  }
+
+  .hero-carousel-track{
+    min-height:320px;
+    border-radius:16px;
+  }
+
+  .hero-note{
+    left:14px;
+    right:14px;
+    bottom:14px;
+    padding:14px 16px;
+    border-radius:16px;
+  }
+
+  .hero-note p{
+    font-size:.92rem;
+  }
+}
