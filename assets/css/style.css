@@ -1036,3 +1036,50 @@ ul{
     align-self:stretch;
   }
 }
+
+/* ============================= */
+/* ALINHAMENTO DOS TITULOS EYEBROW */
+/* ============================= */
+
+.eyebrow {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c47a4f;
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+    /* alinhamento perfeito com conteúdo */
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* garante alinhamento com o container do site */
+
+.section-copy .eyebrow,
+.page-hero .eyebrow,
+.split-section .eyebrow {
+    margin-left: 0;
+}
+
+/* ajuste fino de layout premium */
+
+.section-copy {
+    padding-left: 0;
+}
+
+/* garante que o conteúdo da esquerda fique perfeitamente alinhado */
+
+.split-section {
+    align-items: flex-start;
+}
+
+/* espaçamento correto entre label e titulo */
+
+.section-copy h2,
+.section-copy h1 {
+    margin-top: 0;
+}
