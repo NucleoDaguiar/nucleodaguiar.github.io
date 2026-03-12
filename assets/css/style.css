@@ -2298,3 +2298,10 @@ section{
     font-size:.92rem;
   }
 }
+
+.hero-carousel-track::after{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(to top, rgba(0,0,0,.12), transparent 40%);
+}
