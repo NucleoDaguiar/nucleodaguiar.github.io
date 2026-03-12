@@ -1154,3 +1154,68 @@ max-width:100%;
 }
 
 }
+
+/* ===================================== */
+/* AJUSTE ESPECÍFICO — PÁGINA CONTATO */
+/* ===================================== */
+
+.page-contato .page-hero{
+  padding:52px 0 18px;
+}
+
+.page-contato .page-hero .container{
+  max-width:900px;
+}
+
+.page-contato .page-hero h1{
+  max-width:12ch;
+  margin-bottom:12px;
+}
+
+.page-contato .page-hero p{
+  max-width:46ch;
+}
+
+.page-contato .contato-main-section{
+  padding:28px 0 36px;
+}
+
+.page-contato .contato-grid{
+  align-items:start;
+}
+
+.page-contato .contato-grid .content-card{
+  height:100%;
+}
+
+.page-contato .contato-cta-section{
+  padding:20px 0 56px;
+}
+
+.page-contato .contato-cta-section .cta-box{
+  grid-template-columns:1fr;
+  gap:18px;
+  padding:28px;
+}
+
+.page-contato .contato-cta-section .cta-box h2{
+  max-width:16ch;
+}
+
+.page-contato .contato-cta-section .cta-box p{
+  max-width:48ch;
+}
+
+@media (max-width: 860px){
+  .page-contato .page-hero{
+    padding:42px 0 12px;
+  }
+
+  .page-contato .contato-main-section{
+    padding:22px 0 30px;
+  }
+
+  .page-contato .contato-cta-section{
+    padding:16px 0 44px;
+  }
+}
