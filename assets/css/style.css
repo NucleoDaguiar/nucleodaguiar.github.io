@@ -1026,3 +1026,145 @@ ul{
   }
 }
 
+/* =========================================================
+   AJUSTES EXCLUSIVOS PARA COMPUTADOR / DESKTOP
+   Aplica apenas em telas largas
+   ========================================================= */
+
+@media screen and (min-width: 1025px) {
+
+  /* Largura geral dos blocos centrais */
+  .page-hero .container,
+  .section-heading,
+  .section-copy,
+  .specialty-head,
+  .cta-box > div {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* Home */
+  .hero-copy {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .hero-copy h1 {
+    font-size: 3.2rem;
+    line-height: 1.08;
+    max-width: 12ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-copy p {
+    max-width: 58ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  /* Títulos das páginas internas */
+  .page-hero {
+    padding: 90px 0 50px;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: 2.9rem;
+    line-height: 1.1;
+    max-width: 18ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-hero p {
+    max-width: 62ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.02rem;
+  }
+
+  /* Títulos de seção */
+  .section-heading h2,
+  .section-copy h2,
+  .cta-box h2 {
+    font-size: 2.4rem;
+    line-height: 1.12;
+    max-width: 20ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .section-heading p,
+  .section-copy p,
+  .cta-box p {
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* Especialidades */
+  .specialty-head {
+    text-align: center;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .specialty-head h2 {
+    font-size: 2.2rem;
+    line-height: 1.12;
+    max-width: 22ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .specialty-block {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content-card {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Sobre / CTA */
+  .cta-box {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-box .btn,
+  .section-copy .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Equipe */
+  .team-card-content h2 {
+    font-size: 1.95rem;
+    line-height: 1.12;
+    max-width: 20ch;
+  }
+
+  /* Melhor uso do espaço horizontal geral */
+  .split-section {
+    align-items: center;
+  }
+}
