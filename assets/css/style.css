@@ -1373,3 +1373,283 @@ ul{
   }
 
 }
+
+/* =========================================================
+   UPGRADE VISUAL PREMIUM — NÚCLEO D’AGUIAR
+   ========================================================= */
+
+/* ===== HEADER MAIS REFINADO ===== */
+
+.site-header{
+  background:rgba(250,247,243,.92);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  box-shadow:0 10px 30px rgba(31,74,67,.05);
+}
+
+/* ===== HERO COM PRESENÇA MAIS PREMIUM ===== */
+
+.hero-home{
+  position:relative;
+  overflow:hidden;
+}
+
+.hero-home::before{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  border-radius:50%;
+  top:-180px;
+  left:-120px;
+  background:radial-gradient(circle, rgba(196,130,98,.12) 0%, rgba(196,130,98,0) 70%);
+  pointer-events:none;
+}
+
+.hero-home::after{
+  content:"";
+  position:absolute;
+  width:420px;
+  height:420px;
+  border-radius:50%;
+  right:-120px;
+  bottom:-180px;
+  background:radial-gradient(circle, rgba(31,74,67,.08) 0%, rgba(31,74,67,0) 70%);
+  pointer-events:none;
+}
+
+.hero-copy{
+  position:relative;
+  z-index:2;
+}
+
+.hero-card{
+  background:linear-gradient(180deg, rgba(255,255,255,.82), rgba(255,255,255,.96));
+  border:1px solid rgba(31,74,67,.08);
+  box-shadow:0 24px 60px rgba(42,36,30,.10);
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.hero-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 30px 70px rgba(42,36,30,.14);
+}
+
+/* ===== CARROSSEL MAIS SUAVE ===== */
+
+.hero-carousel-track{
+  position:relative;
+  overflow:hidden;
+}
+
+.hero-carousel-track::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,.16), rgba(0,0,0,0) 42%);
+  pointer-events:none;
+  z-index:2;
+}
+
+.carousel-image{
+  transition:opacity .9s ease, transform 5s ease;
+  transform:scale(1.03);
+}
+
+.carousel-image.active{
+  transform:scale(1);
+}
+
+.carousel-btn{
+  box-shadow:0 14px 28px rgba(0,0,0,.18);
+  transition:transform .22s ease, background .22s ease, box-shadow .22s ease;
+}
+
+.carousel-btn:hover{
+  transform:translateY(-50%) scale(1.08);
+  box-shadow:0 18px 34px rgba(0,0,0,.22);
+}
+
+/* ===== TÍTULOS MAIS ELEGANTES ===== */
+
+.hero-copy h1,
+.page-hero h1,
+.section-heading h2,
+.section-copy h2,
+.cta-box h2,
+.specialty-head h2{
+  letter-spacing:-0.02em;
+}
+
+/* ===== CARDS COM ACABAMENTO MAIS PREMIUM ===== */
+
+.feature-card,
+.service-card,
+.mode-card,
+.step-card,
+.info-card,
+.mini-info-card,
+.content-card,
+.team-card,
+.team-mini-card{
+  background:rgba(255,255,255,.88);
+  border:1px solid rgba(31,74,67,.08);
+  box-shadow:0 18px 38px rgba(42,36,30,.08);
+  transition:
+    transform .28s ease,
+    box-shadow .28s ease,
+    border-color .28s ease,
+    background .28s ease;
+}
+
+.feature-card:hover,
+.service-card:hover,
+.mode-card:hover,
+.step-card:hover,
+.info-card:hover,
+.mini-info-card:hover,
+.content-card:hover,
+.team-card:hover,
+.team-mini-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 24px 50px rgba(42,36,30,.12);
+  border-color:rgba(31,74,67,.16);
+  background:rgba(255,255,255,.96);
+}
+
+/* ===== CARDS DA EQUIPE MAIS SOFISTICADOS ===== */
+
+.team-mini-card img{
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.team-mini-card:hover img{
+  transform:scale(1.05);
+  box-shadow:0 16px 28px rgba(42,36,30,.12);
+}
+
+.team-card{
+  overflow:hidden;
+}
+
+.team-card img{
+  transition:transform .45s ease;
+}
+
+.team-card:hover img{
+  transform:scale(1.03);
+}
+
+/* ===== CTA MAIS NOBRE ===== */
+
+.cta-box{
+  background:linear-gradient(135deg, rgba(255,255,255,.92), rgba(250,247,243,.98));
+  border:1px solid rgba(31,74,67,.08);
+  box-shadow:0 22px 50px rgba(42,36,30,.10);
+}
+
+.cta-box .btn{
+  box-shadow:0 12px 24px rgba(31,74,67,.16);
+}
+
+/* ===== BOTÃO PRINCIPAL MAIS ELEGANTE ===== */
+
+.btn-primary{
+  box-shadow:0 12px 24px rgba(31,74,67,.16);
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease,
+    background .22s ease;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 30px rgba(31,74,67,.22);
+}
+
+/* ===== BOTÃO SECUNDÁRIO MAIS LIMPO ===== */
+
+.btn-secondary{
+  background:rgba(255,255,255,.55);
+  border:1px solid rgba(31,74,67,.18);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+
+.btn-secondary:hover{
+  background:rgba(255,255,255,.82);
+}
+
+/* ===== MAPA MAIS PREMIUM ===== */
+
+.map-box{
+  box-shadow:0 20px 40px rgba(0,0,0,.12);
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.map-box:hover{
+  transform:translateY(-4px);
+  box-shadow:0 28px 58px rgba(0,0,0,.16);
+}
+
+/* ===== ANIMAÇÃO SUAVE DAS SEÇÕES ===== */
+
+.fade-up{
+  opacity:0;
+  transform:translateY(34px);
+  transition:opacity .8s ease, transform .8s ease;
+}
+
+.fade-up.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ===== RITMO VISUAL MAIS LIMPO ===== */
+
+.section-heading,
+.section-copy,
+.page-hero .container{
+  max-width:980px;
+  margin-inline:auto;
+}
+
+.section-heading h2,
+.page-hero h1{
+  text-wrap:balance;
+}
+
+/* ===== WHATSAPP FLUTUANTE MAIS PREMIUM ===== */
+
+.floating-whatsapp{
+  box-shadow:0 16px 32px rgba(0,0,0,.18);
+  transition:transform .22s ease, box-shadow .22s ease;
+}
+
+.floating-whatsapp:hover{
+  transform:translateY(-3px);
+  box-shadow:0 22px 36px rgba(0,0,0,.22);
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 860px){
+  .hero-home::before,
+  .hero-home::after{
+    display:none;
+  }
+
+  .feature-card:hover,
+  .service-card:hover,
+  .mode-card:hover,
+  .step-card:hover,
+  .info-card:hover,
+  .mini-info-card:hover,
+  .content-card:hover,
+  .team-card:hover,
+  .team-mini-card:hover,
+  .hero-card:hover,
+  .map-box:hover{
+    transform:none;
+  }
+}
