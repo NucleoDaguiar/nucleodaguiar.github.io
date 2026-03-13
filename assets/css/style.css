@@ -250,27 +250,30 @@ ul{
   position:relative;
   z-index:1;
   display:grid;
-  grid-template-columns:minmax(520px, 1fr) minmax(460px, 580px);
-  gap:64px;
+  grid-template-columns:minmax(560px, 1fr) minmax(460px, 580px);
+  gap:72px;
   align-items:center;
 }
 
 .hero-copy{
-  max-width:760px;
+  max-width:620px;
   margin-inline:auto;
   text-align:center;
 }
 
 .hero-copy h1{
-  font-size:clamp(3rem, 4vw, 4.4rem);
-  line-height:1.01;
-  max-width:9ch;
+  font-size:clamp(48px, 4.2vw, 68px);
+  line-height:1.08;
+  max-width:18ch;
   margin:0 auto 18px;
+  letter-spacing:-0.025em;
+  font-weight:600;
+  text-wrap:balance;
 }
 
 .hero-copy p{
-  max-width:50ch;
-  margin:0 auto 22px;
+  max-width:36ch;
+  margin:0 auto 24px;
   font-size:1.08rem;
   color:var(--muted);
 }
@@ -1408,10 +1411,7 @@ ul{
   margin-right:auto;
 }
 
-
-/* =============================== */
 /* AJUSTE PREMIUM — PÁGINA LOCAL */
-/* =============================== */
 
 .page-local .split-section,
 .page-local .page-section .split-section{
@@ -1459,7 +1459,6 @@ ul{
   min-height:400px;
 }
 
-/* melhora proporção em telas médias */
 @media (max-width: 900px){
   .page-local .section-copy{
     max-width:100%;
@@ -1477,7 +1476,6 @@ ul{
   }
 }
 
-/* mobile */
 @media (max-width: 640px){
   .page-local .section-copy h2{
     max-width:14ch;
