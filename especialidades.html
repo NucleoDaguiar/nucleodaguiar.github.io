@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Especialidades | Núcleo D’Aguiar</title>
-  <meta name="description" content="Psicoterapia, neuropsicologia e avaliações psicológicas em Goiânia. Atendimento presencial e online para crianças, adolescentes e adultos." />
-  <meta name="keywords" content="psicoterapia em Goiânia, neuropsicologia Goiânia, avaliação psicológica Goiânia, avaliação neuropsicológica Goiânia, orientação vocacional Goiânia, psicólogo online" />
+  <title>Especialidades | Núcleo D’Aguiar – Psicologia em Goiânia</title>
+  <meta name="description" content="Conheça as especialidades do Núcleo D’Aguiar, clínica de psicologia em Goiânia com psicoterapia, neuropsicologia, avaliações psicológicas e acompanhamento especializado para diferentes fases da vida." />
+  <meta name="keywords" content="psicoterapia em Goiânia, neuropsicologia Goiânia, avaliação psicológica Goiânia, avaliação neuropsicológica Goiânia, orientação vocacional Goiânia, psicólogo online, clínica de psicologia Goiânia" />
   <meta name="author" content="Núcleo D’Aguiar" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#1F4A43" />
@@ -18,27 +18,288 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Favicon principal -->
-  <link rel="icon" href="favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_16.png" />
-  <link rel="apple-touch-icon" href="assets/img/favicon_128.png" />
+  <link rel="icon" href="./favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_32.png" />
+  <link rel="apple-touch-icon" sizes="128x128" href="./assets/img/favicon_128.png" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Especialidades | Núcleo D’Aguiar" />
-  <meta property="og:description" content="Psicoterapia, neuropsicologia e avaliações psicológicas em Goiânia. Atendimento presencial e online." />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Núcleo D’Aguiar" />
+  <meta property="og:title" content="Especialidades | Núcleo D’Aguiar – Psicologia em Goiânia" />
+  <meta property="og:description" content="Psicoterapia, neuropsicologia e avaliações especializadas em Goiânia para crianças, adolescentes e adultos." />
   <meta property="og:url" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/especialidades.html" />
   <meta property="og:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png" />
-  <meta property="og:locale" content="pt_BR" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Especialidades | Núcleo D’Aguiar" />
-  <meta name="twitter:description" content="Psicoterapia, neuropsicologia e avaliações psicológicas em Goiânia. Atendimento presencial e online." />
+  <meta name="twitter:title" content="Especialidades | Núcleo D’Aguiar – Psicologia em Goiânia" />
+  <meta name="twitter:description" content="Psicoterapia, neuropsicologia e avaliações especializadas em Goiânia para diferentes fases da vida." />
   <meta name="twitter:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png" />
+
+  <style>
+    .page-especialidades .page-hero {
+      position: relative;
+      padding: 78px 0 38px;
+      background:
+        radial-gradient(circle at top left, rgba(196, 130, 98, 0.11) 0%, rgba(196, 130, 98, 0) 30%),
+        radial-gradient(circle at bottom right, rgba(31, 74, 67, 0.08) 0%, rgba(31, 74, 67, 0) 30%),
+        linear-gradient(180deg, rgba(250, 247, 243, 0.95), rgba(243, 237, 230, 0));
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .page-especialidades .page-hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(31, 74, 67, 0), rgba(31, 74, 67, 0.10), rgba(31, 74, 67, 0));
+    }
+
+    .page-especialidades .page-hero .container {
+      max-width: 1180px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-especialidades .page-hero .eyebrow {
+      margin-bottom: 14px;
+    }
+
+    .hero-title {
+      max-width: 1080px;
+      margin: 0 auto 16px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(42px, 4.3vw, 64px);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      text-align: center;
+      color: #264f47;
+      text-wrap: balance;
+    }
+
+    .page-especialidades .page-hero p {
+      max-width: 780px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.72;
+      color: rgba(47, 47, 47, 0.82);
+    }
+
+    .especialidades-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .especialidades-intro {
+      max-width: 860px;
+      margin: 0 auto 28px;
+      text-align: center;
+    }
+
+    .especialidades-intro h2 {
+      margin-bottom: 12px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.1rem, 3vw, 3rem);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      color: #264f47;
+    }
+
+    .especialidades-intro p {
+      color: #6f6a64;
+      line-height: 1.78;
+    }
+
+    .specialties-grid-premium {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .specialty-card-premium {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: 30px 28px 28px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.985) 0%, rgba(248, 244, 238, 0.985) 100%);
+      border: 1px solid rgba(31, 74, 67, 0.10);
+      border-radius: 28px;
+      box-shadow: 0 18px 44px rgba(31, 74, 67, 0.08);
+      overflow: hidden;
+      transition:
+        transform 0.32s ease,
+        box-shadow 0.32s ease,
+        border-color 0.32s ease;
+    }
+
+    .specialty-card-premium::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 16%;
+      width: 68%;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(196, 130, 98, 0), rgba(196, 130, 98, 0.5), rgba(196, 130, 98, 0));
+    }
+
+    .specialty-card-premium:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 26px 54px rgba(31, 74, 67, 0.12);
+      border-color: rgba(31, 74, 67, 0.16);
+    }
+
+    .specialty-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 58px;
+      height: 58px;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      background: rgba(31, 74, 67, 0.08);
+      color: #264f47;
+      font-size: 1.35rem;
+      transition:
+        transform 0.32s ease,
+        background 0.32s ease;
+    }
+
+    .specialty-card-premium:hover .specialty-icon {
+      transform: scale(1.05);
+      background: rgba(31, 74, 67, 0.12);
+    }
+
+    .specialty-card-premium h2 {
+      margin-bottom: 12px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2rem, 2.2vw, 2.4rem);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      color: #264f47;
+    }
+
+    .specialty-card-premium p {
+      color: #5b5550;
+      line-height: 1.82;
+    }
+
+    .specialty-note {
+      margin-top: auto;
+      padding-top: 18px;
+      color: #8a796f;
+      font-size: 0.94rem;
+      font-weight: 600;
+    }
+
+    .cta-specialties {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: clamp(28px, 4vw, 44px);
+      background: linear-gradient(135deg, rgba(255,255,255,0.94), rgba(250,247,243,0.98));
+      border: 1px solid rgba(31,74,67,0.08);
+      border-radius: 28px;
+      box-shadow: 0 22px 52px rgba(31,74,67,0.08);
+      text-align: center;
+    }
+
+    .cta-specialties h2 {
+      max-width: 17ch;
+      margin: 0 auto 12px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2rem, 2.8vw, 2.7rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      color: #264f47;
+    }
+
+    .cta-specialties p {
+      max-width: 700px;
+      margin: 0 auto 1.6rem;
+      color: #6f6a64;
+      line-height: 1.8;
+    }
+
+    .cta-specialties-actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-outline-soft {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border: 1px solid rgba(31, 74, 67, 0.18);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.60);
+      color: #264f47;
+      font-weight: 600;
+      transition:
+        transform 0.28s ease,
+        background 0.28s ease,
+        border-color 0.28s ease;
+    }
+
+    .btn-outline-soft:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.88);
+      border-color: rgba(31, 74, 67, 0.28);
+    }
+
+    @media (max-width: 900px) {
+      .specialties-grid-premium {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .page-especialidades .page-hero {
+        padding: 54px 0 24px;
+      }
+
+      .hero-title {
+        max-width: 95%;
+        font-size: 34px;
+        line-height: 1.16;
+      }
+
+      .page-especialidades .page-hero p {
+        max-width: 92%;
+        font-size: 16px;
+      }
+
+      .specialty-card-premium {
+        padding: 26px 20px 24px;
+        border-radius: 22px;
+      }
+
+      .specialty-card-premium h2 {
+        font-size: 2rem;
+      }
+
+      .cta-specialties {
+        padding: 24px 18px;
+        border-radius: 22px;
+      }
+
+      .cta-specialties-actions {
+        flex-direction: column;
+      }
+
+      .cta-specialties-actions .btn,
+      .cta-specialties-actions .btn-outline-soft {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
-<body>
+
+<body class="page-especialidades">
   <header class="site-header">
     <div class="container header-wrap">
       <a href="index.html" class="brand" aria-label="Página inicial do Núcleo D’Aguiar">
@@ -60,7 +321,9 @@
         <a href="local.html">Local</a>
       </nav>
 
-      <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="btn btn-primary desktop-cta">Agendar consulta</a>
+      <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="btn btn-primary desktop-cta">
+        Agendar consulta
+      </a>
     </div>
   </header>
 
@@ -68,46 +331,76 @@
     <section class="page-hero">
       <div class="container fade-up">
         <span class="eyebrow">Especialidades</span>
-        <h1>Atendimento psicológico e avaliações especializadas para diferentes fases da vida</h1>
+        <h1 class="hero-title">Atendimento psicológico e avaliações especializadas para diferentes fases da vida</h1>
         <p>
-          Oferecemos acompanhamento psicológico e avaliações especializadas considerando a singularidade
-          de cada pessoa, sua história e o contexto em que está inserida.
+          Oferecemos acompanhamento psicológico e avaliações especializadas considerando a singularidade de cada pessoa, sua história, seu momento de vida e o contexto em que está inserida.
         </p>
       </div>
     </section>
 
     <section class="page-section">
-      <div class="container">
-        <div class="cards-grid cards-2 fade-up">
+      <div class="container especialidades-wrap">
+        <div class="especialidades-intro fade-up">
+          <h2>Cuidado psicológico com técnica, escuta e direcionamento clínico</h2>
+          <p>
+            Nossa atuação integra psicoterapia, avaliação psicológica, neuropsicologia e acompanhamentos especializados, sempre com olhar ético, acolhedor e baseado em evidências.
+          </p>
+        </div>
 
-          <article class="service-card">
+        <div class="specialties-grid-premium fade-up">
+
+          <article class="specialty-card-premium">
+            <div class="specialty-icon">🧠</div>
             <h2>Psicoterapia individual</h2>
-            <p>Atendimento psicológico para crianças, adolescentes e adultos com foco no desenvolvimento emocional, compreensão de padrões de pensamento e fortalecimento de recursos pessoais.</p>
+            <p>
+              Atendimento psicológico para crianças, adolescentes e adultos com foco no desenvolvimento emocional, compreensão de padrões de pensamento e fortalecimento de recursos pessoais. O processo terapêutico busca favorecer autoconhecimento, regulação emocional e construção de estratégias mais saudáveis para lidar com desafios da vida.
+            </p>
+            <div class="specialty-note">Atendimento conforme faixa etária e demanda clínica.</div>
           </article>
 
-          <article class="service-card">
+          <article class="specialty-card-premium">
+            <div class="specialty-icon">⚕️</div>
             <h2>Acompanhamento em processos médicos</h2>
-            <p>Suporte psicológico em momentos de tomada de decisão médica ou preparação para procedimentos importantes.</p>
+            <p>
+              Suporte psicológico em momentos de tomada de decisão médica ou preparação para procedimentos importantes. Esse acompanhamento favorece elaboração emocional, redução de ansiedade e maior clareza diante de etapas delicadas do cuidado em saúde.
+            </p>
+            <div class="specialty-note">Indicado em contextos de preparo emocional e adaptação.</div>
           </article>
 
-          <article class="service-card">
+          <article class="specialty-card-premium">
+            <div class="specialty-icon">🔎</div>
             <h2>Neuropsicologia</h2>
-            <p>Avaliação neuropsicológica para investigação de funcionamento cognitivo, atenção, memória, linguagem e funções executivas.</p>
+            <p>
+              Avaliação neuropsicológica para investigação de funcionamento cognitivo, atenção, memória, linguagem e funções executivas. O processo auxilia na compreensão de dificuldades cognitivas, acadêmicas, ocupacionais e comportamentais, oferecendo base técnica para condutas clínicas e encaminhamentos.
+            </p>
+            <div class="specialty-note">Avaliação especializada com foco em compreensão ampla do funcionamento cognitivo.</div>
           </article>
 
-          <article class="service-card">
+          <article class="specialty-card-premium">
+            <div class="specialty-icon">🏡</div>
             <h2>Adoção e orientação familiar</h2>
-            <p>Acompanhamento psicológico especializado para pessoas adotivas, famílias adotivas e casais em processo de adoção.</p>
+            <p>
+              Acompanhamento psicológico especializado para pessoas adotivas, famílias adotivas e casais em processo de adoção. O trabalho clínico favorece elaboração emocional, fortalecimento de vínculos e cuidado com as especificidades de histórias marcadas por pertencimento, identidade e construção familiar.
+            </p>
+            <div class="specialty-note">Cuidado especializado em vínculos, adoção e orientação familiar.</div>
           </article>
 
-          <article class="service-card">
+          <article class="specialty-card-premium">
+            <div class="specialty-icon">🌱</div>
             <h2>Transtornos do neurodesenvolvimento</h2>
-            <p>Acompanhamento psicológico e avaliação para compreensão de dificuldades relacionadas ao neurodesenvolvimento.</p>
+            <p>
+              Acompanhamento psicológico e avaliação para compreensão de dificuldades relacionadas ao neurodesenvolvimento. O objetivo é ampliar entendimento sobre funcionamento emocional, cognitivo e comportamental, favorecendo intervenções mais adequadas e maior qualidade de vida.
+            </p>
+            <div class="specialty-note">Atuação clínica voltada à compreensão e ao cuidado continuado.</div>
           </article>
 
-          <article class="service-card">
+          <article class="specialty-card-premium">
+            <div class="specialty-icon">💻</div>
             <h2>Modalidades de atendimento</h2>
-            <p>Os atendimentos podem ocorrer de forma presencial ou online, conforme a especialidade e a disponibilidade do profissional responsável.</p>
+            <p>
+              Os atendimentos podem ocorrer de forma presencial ou online, conforme a especialidade e a disponibilidade do profissional responsável. A definição da modalidade considera tanto a demanda clínica quanto o formato mais adequado para favorecer continuidade, conforto e segurança no processo.
+            </p>
+            <div class="specialty-note">Disponibilidade conforme profissional, demanda e modalidade indicada.</div>
           </article>
 
         </div>
@@ -115,13 +408,19 @@
     </section>
 
     <section class="cta-section">
-      <div class="container cta-box fade-up">
-        <div>
+      <div class="container">
+        <div class="cta-specialties fade-up">
           <span class="eyebrow">Agendamento</span>
           <h2>Fale com a clínica e receba orientação sobre o melhor atendimento para você</h2>
-          <p>Nossa equipe pode ajudar a identificar o profissional mais adequado para sua necessidade.</p>
+          <p>
+            Nossa equipe pode ajudar a identificar a especialidade e o profissional mais adequados para sua necessidade, considerando modalidade de atendimento, faixa etária e demanda clínica.
+          </p>
+
+          <div class="cta-specialties-actions">
+            <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Agendar consulta</a>
+            <a href="contato.html" class="btn-outline-soft">Falar com a clínica</a>
+          </div>
         </div>
-        <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Agendar consulta</a>
       </div>
     </section>
   </main>
@@ -160,7 +459,9 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Falar no WhatsApp">WhatsApp</a>
+  <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Falar no WhatsApp">
+    WhatsApp
+  </a>
 
   <script src="assets/js/script.js"></script>
 </body>
