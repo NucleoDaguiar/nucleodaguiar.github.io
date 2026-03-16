@@ -6,175 +6,440 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Sobre | Núcleo D’Aguiar – Psicologia em Goiânia</title>
-
   <meta name="description" content="Conheça a história, missão, visão e valores do Núcleo D’Aguiar, clínica de psicologia em Goiânia especializada em terapia cognitivo-comportamental e avaliação neuropsicológica.">
+  <meta name="keywords" content="psicólogo em Goiânia, clínica de psicologia Goiânia, avaliação neuropsicológica Goiânia, terapia cognitivo-comportamental Goiânia, Núcleo D’Aguiar">
+  <meta name="author" content="Núcleo D’Aguiar">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1F4A43">
+
+  <link rel="canonical" href="https://nucleodaguiar.github.io/nucleo-daguiar-site/sobre.html">
+
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_32.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="./assets/img/favicon_128.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Núcleo D’Aguiar">
+  <meta property="og:title" content="Sobre | Núcleo D’Aguiar – Psicologia em Goiânia">
+  <meta property="og:description" content="Conheça a história, missão, visão e valores do Núcleo D’Aguiar, clínica de psicologia em Goiânia com atendimento acolhedor e baseado em evidências.">
+  <meta property="og:url" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/sobre.html">
+  <meta property="og:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sobre | Núcleo D’Aguiar – Psicologia em Goiânia">
+  <meta name="twitter:description" content="Conheça a história, missão, visão e valores do Núcleo D’Aguiar, clínica de psicologia em Goiânia.">
+  <meta name="twitter:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="./assets/img/icone_header_256.png">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <style>
-    /* HERO TITLE PREMIUM */
+    .page-sobre .page-hero {
+      position: relative;
+      padding: 78px 0 38px;
+      background:
+        radial-gradient(circle at top left, rgba(196, 130, 98, 0.11) 0%, rgba(196, 130, 98, 0) 30%),
+        radial-gradient(circle at bottom right, rgba(31, 74, 67, 0.08) 0%, rgba(31, 74, 67, 0) 30%),
+        linear-gradient(180deg, rgba(250, 247, 243, 0.95), rgba(243, 237, 230, 0));
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .page-sobre .page-hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(31, 74, 67, 0), rgba(31, 74, 67, 0.1), rgba(31, 74, 67, 0));
+    }
+
+    .page-sobre .page-hero .container {
+      max-width: 1180px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-sobre .page-hero .eyebrow {
+      margin-bottom: 14px;
+    }
 
     .hero-title {
-      max-width: 980px;
-      margin: auto;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(40px, 4.2vw, 60px);
-      line-height: 1.15;
-      letter-spacing: -0.02em;
+      max-width: 1040px;
+      margin: 0 auto 16px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(42px, 4.4vw, 66px);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
       text-align: center;
       color: #264f47;
+      text-wrap: balance;
     }
 
-    /* subtitulo */
-
-    .page-hero p {
-      max-width: 650px;
-      margin: 20px auto 0;
+    .page-sobre .page-hero p {
+      max-width: 720px;
+      margin: 0 auto;
       font-size: 18px;
-      opacity: 0.85;
+      line-height: 1.7;
+      color: rgba(47, 47, 47, 0.82);
     }
-
-    /* seção sobre */
 
     .sobre-container {
-      max-width: 940px;
-      margin: auto;
+      max-width: 1120px;
+      margin: 0 auto;
     }
 
     .sobre-editorial {
-      max-width: 860px;
+      position: relative;
+      max-width: 940px;
       margin: 0 auto;
-      padding: clamp(28px, 4vw, 54px);
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 244, 238, 0.98) 100%);
-      border: 1px solid rgba(31, 74, 67, 0.10);
-      border-radius: 24px;
-      box-shadow: 0 18px 45px rgba(31, 74, 67, 0.08);
+      padding: clamp(32px, 4.5vw, 62px);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.985) 0%, rgba(248, 244, 238, 0.985) 100%);
+      border: 1px solid rgba(31, 74, 67, 0.1);
+      border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(31, 74, 67, 0.08);
+      overflow: hidden;
       text-align: center;
+    }
+
+    .sobre-editorial::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 14%;
+      width: 72%;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(196, 130, 98, 0), rgba(196, 130, 98, 0.45), rgba(196, 130, 98, 0));
+    }
+
+    .sobre-editorial::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(196, 130, 98, 0), rgba(196, 130, 98, 0.26), rgba(196, 130, 98, 0));
     }
 
     .sobre-editorial h2 {
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.9rem;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.1rem, 3.1vw, 2.95rem);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      color: #264f47;
     }
 
     .sobre-editorial p {
-      max-width: 760px;
+      max-width: 790px;
       margin: 0 auto 1.35rem;
-      line-height: 1.9;
       font-size: 17px;
+      line-height: 1.92;
+      color: #554f49;
+    }
+
+    .sobre-editorial em {
+      font-style: italic;
+      color: #3e3a36;
     }
 
     .frase-destaque {
-      font-weight: 600;
+      max-width: 760px;
+      margin-top: 1.7rem;
+      margin-bottom: 1.7rem;
       font-size: 18px;
-      margin-top: 1.6rem;
-      margin-bottom: 1.6rem;
+      font-weight: 700;
+      color: #264f47;
     }
 
-    /* missão, visão e valores */
+    .sobre-divisor {
+      width: 90px;
+      height: 1px;
+      margin: 1.6rem auto;
+      background: linear-gradient(90deg, rgba(196, 130, 98, 0), rgba(196, 130, 98, 0.55), rgba(196, 130, 98, 0));
+      opacity: 0.9;
+    }
 
     .mvv-section {
-      margin-top: 44px;
+      padding-top: 14px;
     }
 
     .mvv-header {
-      max-width: 760px;
-      margin: 0 auto 2rem;
+      max-width: 840px;
+      margin: 0 auto 2.4rem;
       text-align: center;
+    }
+
+    .mvv-header .eyebrow {
+      margin-bottom: 12px;
+    }
+
+    .mvv-header h2 {
+      margin-bottom: 12px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.2rem, 3vw, 3.05rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+      color: #264f47;
+      text-wrap: balance;
+    }
+
+    .mvv-header p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #6f6a64;
+      line-height: 1.78;
     }
 
     .mvv-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.5rem;
+      gap: 24px;
+      align-items: stretch;
     }
 
     .mvv-card {
-      padding: 32px 26px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 244, 238, 0.98) 100%);
-      border: 1px solid rgba(31, 74, 67, 0.10);
-      border-radius: 22px;
-      box-shadow: 0 16px 36px rgba(31, 74, 67, 0.08);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 34px 28px 30px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.985) 0%, rgba(248, 244, 238, 0.985) 100%);
+      border: 1px solid rgba(31, 74, 67, 0.1);
+      border-radius: 26px;
+      box-shadow: 0 16px 38px rgba(31, 74, 67, 0.08);
       text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      transition:
+        transform 0.36s ease,
+        box-shadow 0.36s ease,
+        border-color 0.36s ease;
+    }
+
+    .mvv-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 16%;
+      width: 68%;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(196, 130, 98, 0), rgba(196, 130, 98, 0.5), rgba(196, 130, 98, 0));
     }
 
     .mvv-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 22px 42px rgba(31, 74, 67, 0.12);
+      transform: translateY(-7px);
+      box-shadow: 0 26px 52px rgba(31, 74, 67, 0.12);
+      border-color: rgba(31, 74, 67, 0.17);
     }
 
     .mvv-icon {
-      width: 54px;
-      height: 54px;
-      margin: 0 auto 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 1rem;
       border-radius: 50%;
       background: rgba(31, 74, 67, 0.08);
       color: #264f47;
-      font-size: 1.35rem;
+      font-size: 1.45rem;
+      transition:
+        transform 0.36s ease,
+        background 0.36s ease;
+    }
+
+    .mvv-card:hover .mvv-icon {
+      transform: scale(1.06);
+      background: rgba(31, 74, 67, 0.12);
     }
 
     .mvv-card h3 {
-      margin-bottom: 1rem;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2rem;
-      line-height: 1.1;
+      margin-bottom: 0.95rem;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(1.95rem, 2.2vw, 2.35rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
       color: #264f47;
     }
 
     .mvv-card p {
       margin: 0;
-      line-height: 1.8;
+      color: #5b5550;
       font-size: 16px;
+      line-height: 1.85;
     }
 
-    @media (max-width: 900px) {
+    .seo-local-note {
+      max-width: 860px;
+      margin: 26px auto 0;
+      padding: 16px 18px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(31, 74, 67, 0.08);
+      border-radius: 18px;
+      color: #6b655f;
+      font-size: 15px;
+      line-height: 1.75;
+      text-align: center;
+      box-shadow: 0 10px 24px rgba(31, 74, 67, 0.05);
+    }
+
+    .cta-premium {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: clamp(28px, 4vw, 44px);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(250, 247, 243, 0.98));
+      border: 1px solid rgba(31, 74, 67, 0.08);
+      border-radius: 28px;
+      box-shadow: 0 22px 52px rgba(31, 74, 67, 0.08);
+      text-align: center;
+    }
+
+    .cta-premium h2 {
+      max-width: 15ch;
+      margin: 0 auto 12px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2rem, 2.8vw, 2.7rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      color: #264f47;
+    }
+
+    .cta-premium p {
+      max-width: 660px;
+      margin: 0 auto 1.6rem;
+      color: #6f6a64;
+      line-height: 1.8;
+    }
+
+    .cta-premium-actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-outline-soft {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border: 1px solid rgba(31, 74, 67, 0.18);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.6);
+      color: #264f47;
+      font-weight: 600;
+      transition:
+        transform 0.28s ease,
+        background 0.28s ease,
+        border-color 0.28s ease;
+    }
+
+    .btn-outline-soft:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.88);
+      border-color: rgba(31, 74, 67, 0.28);
+    }
+
+    @media (max-width: 980px) {
       .mvv-grid {
         grid-template-columns: 1fr;
+      }
+
+      .mvv-card {
+        max-width: 760px;
+        margin: 0 auto;
       }
     }
 
     @media (max-width: 768px) {
+      .page-sobre .page-hero {
+        padding: 54px 0 24px;
+      }
+
       .hero-title {
+        max-width: 95%;
         font-size: 34px;
-        line-height: 1.2;
+        line-height: 1.16;
+      }
+
+      .page-sobre .page-hero p {
+        max-width: 92%;
+        font-size: 16px;
       }
 
       .sobre-editorial {
         padding: 26px 20px;
-        border-radius: 18px;
+        border-radius: 22px;
       }
 
       .sobre-editorial p {
         font-size: 16px;
-        line-height: 1.85;
+        line-height: 1.86;
       }
 
       .mvv-card {
         padding: 26px 20px;
+        border-radius: 22px;
       }
 
       .mvv-card h3 {
-        font-size: 1.8rem;
+        font-size: 1.95rem;
+      }
+
+      .mvv-card p {
+        font-size: 15.5px;
+      }
+
+      .cta-premium {
+        padding: 24px 18px;
+        border-radius: 22px;
+      }
+
+      .cta-premium-actions {
+        flex-direction: column;
+      }
+
+      .cta-premium-actions .btn,
+      .cta-premium-actions .btn-outline-soft {
+        width: 100%;
       }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Psychologist",
+    "name": "Núcleo D’Aguiar – Psicologia, Neurociências & Associados",
+    "url": "https://nucleodaguiar.github.io/nucleo-daguiar-site/sobre.html",
+    "image": "https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png",
+    "telephone": "+55 62 99178-7997",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. T-1, 1536 - Setor Bueno - Galeria Donato Ferreira",
+      "addressLocality": "Goiânia",
+      "addressRegion": "GO",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Goiânia",
+    "sameAs": [
+      "https://instagram.com/nucleo.daguiar"
+    ]
+  }
+  </script>
 </head>
 
-<body>
+<body class="page-sobre">
 
   <header class="site-header">
     <div class="container header-wrap">
 
-      <a href="index.html" class="brand">
-        <img src="assets/img/icone_header_256.png" class="brand-icon" alt="Ícone Núcleo D’Aguiar">
+      <a href="index.html" class="brand" aria-label="Página inicial do Núcleo D’Aguiar">
+        <img src="./assets/img/icone_header_256.png" class="brand-icon" alt="Ícone Núcleo D’Aguiar" loading="eager" decoding="async">
 
         <div class="brand-text">
           <span class="brand-title">Núcleo D’Aguiar</span>
@@ -190,7 +455,7 @@
         <a href="contato.html">Contato</a>
       </nav>
 
-      <a href="https://wa.me/5562991787997" class="btn btn-primary">
+      <a href="https://wa.me/5562991787997" class="btn btn-primary desktop-cta" target="_blank" rel="noopener noreferrer">
         Agendar consulta
       </a>
 
@@ -210,7 +475,7 @@
         </h1>
 
         <p>
-          Conheça a história e o propósito do Núcleo D’Aguiar.
+          Conheça a história e o propósito do Núcleo D’Aguiar, clínica de psicologia em Goiânia com atendimento acolhedor, ético e baseado em evidências.
         </p>
 
       </div>
@@ -224,50 +489,53 @@
           <h2>Sobre a clínica</h2>
 
           <p>O Núcleo D’Aguiar nasceu antes de ter paredes ou logomarca.</p>
-
           <p>Nasceu como propósito o desejo de tornar a psicologia acessível, humana e fundamentada em ciência.</p>
 
-          <p>Durante anos, a ideia cresceu dentro de uma inquietação:</p>
+          <div class="sobre-divisor"></div>
 
+          <p>Durante anos, a ideia cresceu dentro de uma inquietação:</p>
           <p><em>“A psicologia precisa acolher sem deixar de orientar. Precisa ser leve, mas também transformadora.”</em></p>
 
+          <div class="sobre-divisor"></div>
+
           <p>Nos atendimentos clínicos, era comum ouvir frases como:</p>
-
           <p>“Já tentei terapia, mas não sabia o que fazer com o que eu sentia.”</p>
-
           <p>“Eu queria entender o meu problema, não só desabafar.”</p>
 
-          <p>Essas vivências revelaram uma necessidade: criar um espaço onde o acolhimento e a ciência caminhassem lado a lado.</p>
+          <div class="sobre-divisor"></div>
 
+          <p>Essas vivências revelaram uma necessidade: criar um espaço onde o acolhimento e a ciência caminhassem lado a lado.</p>
           <p>Assim, o Núcleo D’Aguiar nasceu não apenas como uma clínica, mas como um lugar de encontro entre o sentir e o compreender.</p>
 
-          <p>Nossa missão é promover saúde mental com ciência, humanidade e direção, oferecendo atendimentos psicológicos e neuropsicológicos baseados em evidências, com comunicação clara e empatia.</p>
+          <div class="sobre-divisor"></div>
 
+          <p>Nossa missão é promover saúde mental com ciência, humanidade e direção, oferecendo atendimentos psicológicos e neuropsicológicos baseados em evidências, com comunicação clara e empatia.</p>
           <p>Mais do que tratar, buscamos traduzir ciência em acolhimento, ajudando cada pessoa a compreender o que sente e a construir caminhos possíveis.</p>
 
+          <div class="sobre-divisor"></div>
+
           <p>O Núcleo D’Aguiar representa um espaço onde técnica e afeto se encontram.</p>
-
           <p>Aqui, cada pessoa é vista, compreendida e acompanhada com responsabilidade e respeito.</p>
-
           <p>Valorizamos a segurança emocional, a direção clínica e a autonomia acreditamos que a terapia deve fortalecer o paciente, não criar dependência.</p>
 
           <p>© 2025 | Conteúdo produzido pelo Núcleo d’Aguiar – Psicologia, Neurociência & Associados | Todos os direitos reservados.</p>
 
           <p class="frase-destaque">Acolhemos com base em evidências. Conduzimos com propósito.</p>
 
+          <div class="sobre-divisor"></div>
+
           <p>Atuamos em diferentes fases da vida, oferecendo cuidado psicológico e neurocientífico adaptado a cada necessidade:</p>
-
           <p>Na infância, com foco em desenvolvimento e orientação familiar;</p>
-
           <p>Na adolescência, com psicoterapia e orientação vocacional;</p>
-
           <p>Na vida adulta, com terapia cognitivo-comportamental, avaliação psicológica e neuropsicológica, e terapia de casal.</p>
 
+          <div class="sobre-divisor"></div>
+
           <p>Cada etapa representa um pilar: desenvolver, direcionar e transformar.</p>
-
           <p>O Núcleo d’Aguiar nasceu da visão da Psicóloga Ereniz L. Castro Quispe, idealizadora e responsável técnica da clínica.</p>
-
           <p>Com especialização em Terapia Cognitivo-Comportamental (TCC) e Neuropsicologia, conduz os processos clínicos com ética, técnica e acolhimento.</p>
+
+          <div class="sobre-divisor"></div>
 
           <p>A clínica conta ainda com profissionais associados, cuidadosamente selecionados conforme o perfil e a necessidade de cada paciente, garantindo pertinência, personalização e qualidade no cuidado.</p>
 
@@ -275,8 +543,9 @@
 
           <p>Nosso compromisso é oferecer o profissional certo, no momento certo, com a abordagem certa.</p>
 
-          <p>Com o tempo, o Núcleo D’Aguiar se tornou mais do que uma clínica tornou-se uma rede de profissionais e pacientes conectados pelo mesmo propósito: transformar sofrimento em compreensão e caminho possível.</p>
+          <div class="sobre-divisor"></div>
 
+          <p>Com o tempo, o Núcleo D’Aguiar se tornou mais do que uma clínica tornou-se uma rede de profissionais e pacientes conectados pelo mesmo propósito: transformar sofrimento em compreensão e caminho possível.</p>
           <p>Cada pessoa atendida se torna parte dessa história, e cada processo reafirma a nossa essência:</p>
 
           <p class="frase-destaque">A transformação acontece quando alguém é visto, ouvido e compreendido.</p>
@@ -292,7 +561,7 @@
         <div class="mvv-header">
           <span class="eyebrow">Base institucional</span>
           <h2>Missão, visão e valores</h2>
-          <p>Os pilares do Núcleo D’Aguiar expressam, de forma objetiva, a essência do cuidado apresentado na história da clínica.</p>
+          <p>Os pilares do Núcleo D’Aguiar traduzem a essência do cuidado psicológico em Goiânia: acolhimento humano, direção clínica e compromisso real com a transformação possível.</p>
         </div>
 
         <div class="mvv-grid">
@@ -306,7 +575,7 @@
           <article class="mvv-card">
             <div class="mvv-icon">🌿</div>
             <h3>Visão</h3>
-            <p>Ser um espaço de referência onde acolhimento e ciência caminhem lado a lado, traduzindo conhecimento em cuidado e ajudando cada pessoa a transformar sofrimento em compreensão e caminho possível.</p>
+            <p>Ser um espaço de referência em Goiânia onde acolhimento e ciência caminhem lado a lado, traduzindo conhecimento em cuidado e ajudando cada pessoa a transformar sofrimento em compreensão e caminho possível.</p>
           </article>
 
           <article class="mvv-card">
@@ -317,6 +586,24 @@
 
         </div>
 
+        <div class="seo-local-note">
+          Atendimento psicológico em Goiânia com foco em psicoterapia, avaliação psicológica e avaliação neuropsicológica, integrando escuta qualificada, técnica e cuidado personalizado.
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-premium">
+          <h2>Deseja iniciar seu acompanhamento?</h2>
+          <p>Fale com a clínica para encontrar o profissional mais adequado ao seu momento, com atendimento acolhedor, ético e baseado em evidências em Goiânia.</p>
+
+          <div class="cta-premium-actions">
+            <a href="https://wa.me/5562991787997" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Agendar consulta</a>
+            <a href="contato.html" class="btn-outline-soft">Ver formas de contato</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -328,7 +615,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+  <script src="./assets/js/script.js" defer></script>
 
 </body>
 
