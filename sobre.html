@@ -12,32 +12,57 @@
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1F4A43">
 
-  <link rel="canonical" href="https://nucleodaguiar.github.io/nucleo-daguiar-site/sobre.html">
+  <link rel="canonical" href="https://nucleodaguiar.github.io/nucleodaguiar-site/sobre.html">
 
-  <link rel="icon" href="./favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_32.png">
-  <link rel="apple-touch-icon" sizes="128x128" href="./assets/img/favicon_128.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_32.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="assets/img/favicon_128.png">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Núcleo D’Aguiar">
   <meta property="og:title" content="Sobre | Núcleo D’Aguiar – Psicologia em Goiânia">
   <meta property="og:description" content="Conheça a história, missão, visão e valores do Núcleo D’Aguiar, clínica de psicologia em Goiânia com atendimento acolhedor e baseado em evidências.">
-  <meta property="og:url" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/sobre.html">
-  <meta property="og:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png">
+  <meta property="og:url" content="https://nucleodaguiar.github.io/nucleodaguiar-site/sobre.html">
+  <meta property="og:image" content="https://nucleodaguiar.github.io/nucleodaguiar-site/assets/img/icone_header_256.png">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sobre | Núcleo D’Aguiar – Psicologia em Goiânia">
   <meta name="twitter:description" content="Conheça a história, missão, visão e valores do Núcleo D’Aguiar, clínica de psicologia em Goiânia.">
-  <meta name="twitter:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png">
+  <meta name="twitter:image" content="https://nucleodaguiar.github.io/nucleodaguiar-site/assets/img/icone_header_256.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="./assets/img/icone_header_256.png">
+  <link rel="preload" as="image" href="assets/img/icone_header_256.png">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17385598203"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17385598203');
+  </script>
+
+  <!-- Event snippet for Clique WhatsApp – Núcleo D’Aguiar -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.open(url, '_blank', 'noopener,noreferrer');
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17385598203/TA3UCOS7_4kcEPvZjOJA',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 
   <style>
     .page-sobre .page-hero {
@@ -415,8 +440,8 @@
     "@context": "https://schema.org",
     "@type": "Psychologist",
     "name": "Núcleo D’Aguiar – Psicologia, Neurociências & Associados",
-    "url": "https://nucleodaguiar.github.io/nucleo-daguiar-site/sobre.html",
-    "image": "https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png",
+    "url": "https://nucleodaguiar.github.io/nucleodaguiar-site/sobre.html",
+    "image": "https://nucleodaguiar.github.io/nucleodaguiar-site/assets/img/icone_header_256.png",
     "telephone": "+55 62 99178-7997",
     "address": {
       "@type": "PostalAddress",
@@ -439,7 +464,7 @@
     <div class="container header-wrap">
 
       <a href="index.html" class="brand" aria-label="Página inicial do Núcleo D’Aguiar">
-        <img src="./assets/img/icone_header_256.png" class="brand-icon" alt="Ícone Núcleo D’Aguiar" loading="eager" decoding="async">
+        <img src="assets/img/icone_header_256.png" class="brand-icon" alt="Ícone Núcleo D’Aguiar" loading="eager" decoding="async">
 
         <div class="brand-text">
           <span class="brand-title">Núcleo D’Aguiar</span>
@@ -458,7 +483,11 @@
         <a href="local.html">Local</a>
       </nav>
 
-      <a href="https://wa.me/5562991787997" class="btn btn-primary desktop-cta" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/5562991787997"
+         class="btn btn-primary desktop-cta"
+         target="_blank"
+         rel="noopener noreferrer"
+         onclick="return gtag_report_conversion('https://wa.me/5562991787997');">
         Agendar consulta
       </a>
 
@@ -602,7 +631,11 @@
           <p>Fale com a clínica para encontrar o profissional mais adequado ao seu momento, com atendimento acolhedor, ético e baseado em evidências em Goiânia.</p>
 
           <div class="cta-premium-actions">
-            <a href="https://wa.me/5562991787997" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Agendar consulta</a>
+            <a href="https://wa.me/5562991787997"
+               class="btn btn-primary"
+               target="_blank"
+               rel="noopener noreferrer"
+               onclick="return gtag_report_conversion('https://wa.me/5562991787997');">Agendar consulta</a>
             <a href="contato.html" class="btn-outline-soft">Ver formas de contato</a>
           </div>
         </div>
@@ -617,7 +650,7 @@
     </div>
   </footer>
 
-  <script src="./assets/js/script.js" defer></script>
+  <script src="assets/js/script.js" defer></script>
 
 </body>
 
