@@ -11,30 +11,55 @@
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#1F4A43" />
 
-  <link rel="canonical" href="https://nucleodaguiar.github.io/nucleo-daguiar-site/especialidades.html" />
+  <link rel="canonical" href="https://nucleodaguiar.github.io/nucleodaguiar-site/especialidades.html" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 
-  <link rel="icon" href="./favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_32.png" />
-  <link rel="apple-touch-icon" sizes="128x128" href="./assets/img/favicon_128.png" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_32.png" />
+  <link rel="apple-touch-icon" sizes="128x128" href="assets/img/favicon_128.png" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:site_name" content="Núcleo D’Aguiar" />
   <meta property="og:title" content="Especialidades | Núcleo D’Aguiar – Psicologia em Goiânia" />
   <meta property="og:description" content="Psicoterapia, neuropsicologia e avaliações especializadas em Goiânia para crianças, adolescentes e adultos." />
-  <meta property="og:url" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/especialidades.html" />
-  <meta property="og:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png" />
+  <meta property="og:url" content="https://nucleodaguiar.github.io/nucleodaguiar-site/especialidades.html" />
+  <meta property="og:image" content="https://nucleodaguiar.github.io/nucleodaguiar-site/assets/img/icone_header_256.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Especialidades | Núcleo D’Aguiar – Psicologia em Goiânia" />
   <meta name="twitter:description" content="Psicoterapia, neuropsicologia e avaliações especializadas em Goiânia para diferentes fases da vida." />
-  <meta name="twitter:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png" />
+  <meta name="twitter:image" content="https://nucleodaguiar.github.io/nucleodaguiar-site/assets/img/icone_header_256.png" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17385598203"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17385598203');
+  </script>
+
+  <!-- Event snippet for Clique WhatsApp – Núcleo D’Aguiar -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.open(url, '_blank', 'noopener,noreferrer');
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17385598203/TA3UCOS7_4kcEPvZjOJA',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 
   <style>
     .page-especialidades .page-hero {
@@ -321,7 +346,11 @@
         <a href="local.html">Local</a>
       </nav>
 
-      <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="btn btn-primary desktop-cta">
+      <a href="https://wa.me/5562991787997"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn btn-primary desktop-cta"
+         onclick="return gtag_report_conversion('https://wa.me/5562991787997');">
         Agendar consulta
       </a>
     </div>
@@ -417,7 +446,11 @@
           </p>
 
           <div class="cta-specialties-actions">
-            <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Agendar consulta</a>
+            <a href="https://wa.me/5562991787997"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary"
+               onclick="return gtag_report_conversion('https://wa.me/5562991787997');">Agendar consulta</a>
             <a href="contato.html" class="btn-outline-soft">Falar com a clínica</a>
           </div>
         </div>
@@ -447,7 +480,10 @@
       <div>
         <h4>Contato</h4>
         <ul>
-          <li><a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="https://wa.me/5562991787997"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 onclick="return gtag_report_conversion('https://wa.me/5562991787997');">WhatsApp</a></li>
           <li><a href="https://instagram.com/nucleo.daguiar" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           <li>Av. T-1, 1536 - Setor Bueno - Galeria Donato Ferreira, Goiânia - GO</li>
         </ul>
@@ -459,7 +495,12 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Falar no WhatsApp">
+  <a href="https://wa.me/5562991787997"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="floating-whatsapp"
+     aria-label="Falar no WhatsApp"
+     onclick="return gtag_report_conversion('https://wa.me/5562991787997');">
     WhatsApp
   </a>
 
