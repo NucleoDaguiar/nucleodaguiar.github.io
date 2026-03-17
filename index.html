@@ -11,7 +11,7 @@
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#1F4A43" />
 
-  <link rel="canonical" href="https://nucleodaguiar.github.io/nucleo-daguiar-site/" />
+  <link rel="canonical" href="https://nucleodaguiar.github.io/nucleodaguiar-site/" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,22 +26,22 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Núcleo D’Aguiar | Psicologia, Neurociências & Associados" />
   <meta property="og:description" content="Clínica de psicologia em Goiânia com atendimento presencial e online, cuidado baseado em evidências e escuta qualificada." />
-  <meta property="og:url" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/" />
-  <meta property="og:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png" />
+  <meta property="og:url" content="https://nucleodaguiar.github.io/nucleodaguiar-site/" />
+  <meta property="og:image" content="https://nucleodaguiar.github.io/nucleodaguiar-site/assets/img/icone_header_256.png" />
   <meta property="og:locale" content="pt_BR" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Núcleo D’Aguiar | Psicologia, Neurociências & Associados" />
   <meta name="twitter:description" content="Clínica de psicologia em Goiânia com atendimento presencial e online." />
-  <meta name="twitter:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png" />
+  <meta name="twitter:image" content="https://nucleodaguiar.github.io/nucleodaguiar-site/assets/img/icone_header_256.png" />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Psychologist",
     "name": "Núcleo D’Aguiar",
-    "image": "https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png",
-    "url": "https://nucleodaguiar.github.io/nucleo-daguiar-site/",
+    "image": "https://nucleodaguiar.github.io/nucleodaguiar-site/assets/img/icone_header_256.png",
+    "url": "https://nucleodaguiar.github.io/nucleodaguiar-site/",
     "telephone": "+55 62 99178-7997",
     "address": {
       "@type": "PostalAddress",
@@ -57,17 +57,32 @@
     "description": "Clínica de psicologia em Goiânia com atendimento presencial e online, psicoterapia, neuropsicologia e orientação vocacional."
   }
   </script>
-</head>
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17385598203"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17385598203"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17385598203');
+  </script>
 
-  gtag('config', 'AW-17385598203');
-</script>
+  <!-- Event snippet for Clique WhatsApp – Núcleo D’Aguiar -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.open(url, '_blank', 'noopener,noreferrer');
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17385598203/TA3UCOS7_4kcEPvZjOJA',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+</head>
 <body>
   
   <header class="site-header">
@@ -91,7 +106,11 @@
         <a href="local.html">Local</a>
       </nav>
 
-      <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="btn btn-primary desktop-cta">Agendar consulta</a>
+      <a href="https://wa.me/5562991787997"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn btn-primary desktop-cta"
+         onclick="return gtag_report_conversion('https://wa.me/5562991787997');">Agendar consulta</a>
     </div>
   </header>
 
@@ -366,7 +385,10 @@
           <p>Entre em contato pelo WhatsApp, conheça nosso Instagram e veja a localização da clínica.</p>
 
           <div class="contact-list">
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer">Iniciar conversa</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/5562991787997"
+               target="_blank"
+               rel="noopener noreferrer"
+               onclick="return gtag_report_conversion('https://wa.me/5562991787997');">Iniciar conversa</a></p>
             <p><strong>Instagram:</strong> <a href="https://instagram.com/nucleo.daguiar" target="_blank" rel="noopener noreferrer">@nucleo.daguiar</a></p>
             <p><strong>Endereço:</strong> Av. T-1, 1536 - Setor Bueno - Galeria Donato Ferreira, Goiânia - GO</p>
           </div>
@@ -406,7 +428,10 @@
       <div>
         <h4>Contato</h4>
         <ul>
-          <li><a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="https://wa.me/5562991787997"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 onclick="return gtag_report_conversion('https://wa.me/5562991787997');">WhatsApp</a></li>
           <li><a href="https://instagram.com/nucleo.daguiar" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           <li>Av. T-1, 1536 - Setor Bueno - Galeria Donato Ferreira, Goiânia - GO</li>
         </ul>
@@ -417,7 +442,12 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Falar no WhatsApp">WhatsApp</a>
+  <a href="https://wa.me/5562991787997"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="floating-whatsapp"
+     aria-label="Falar no WhatsApp"
+     onclick="return gtag_report_conversion('https://wa.me/5562991787997');">WhatsApp</a>
 
   <script src="assets/js/script.js"></script>
 </body>
