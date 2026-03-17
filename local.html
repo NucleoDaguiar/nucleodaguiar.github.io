@@ -12,7 +12,7 @@
 <meta name="robots" content="index, follow"/>
 <meta name="theme-color" content="#1F4A43"/>
 
-<link rel="canonical" href="https://nucleodaguiar.github.io/nucleo-daguiar-site/local.html"/>
+<link rel="canonical" href="https://nucleodaguiar.github.io/nucleodaguiar-site/local.html"/>
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -29,14 +29,52 @@
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Localização | Núcleo D’Aguiar"/>
 <meta property="og:description" content="Veja como chegar ao Núcleo D’Aguiar em Goiânia."/>
-<meta property="og:url" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/local.html"/>
-<meta property="og:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png"/>
+<meta property="og:url" content="https://nucleodaguiar.github.io/nucleodaguiar-site/local.html"/>
+<meta property="og:image" content="https://nucleodaguiar.github.io/nucleodaguiar-site/assets/img/icone_header_256.png"/>
 <meta property="og:locale" content="pt_BR"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Localização | Núcleo D’Aguiar"/>
 <meta name="twitter:description" content="Veja como chegar ao Núcleo D’Aguiar em Goiânia."/>
-<meta name="twitter:image" content="https://nucleodaguiar.github.io/nucleo-daguiar-site/assets/img/icone_header_256.png"/>
+<meta name="twitter:image" content="https://nucleodaguiar.github.io/nucleodaguiar-site/assets/img/icone_header_256.png"/>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17385598203"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17385598203');
+</script>
+
+<!-- Event snippet for Clique WhatsApp – Núcleo D’Aguiar -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) !== 'undefined') {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17385598203/TA3UCOS7_4kcEPvZjOJA',
+      'event_callback': callback
+    });
+    return false;
+  }
+
+  /* Evento secundário opcional para clique no mapa */
+  function gtag_report_maps_click(url) {
+    gtag('event', 'click_maps', {
+      'event_category': 'engagement',
+      'event_label': 'Abrir rota no Google Maps'
+    });
+
+    if (typeof(url) !== 'undefined') {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+    return false;
+  }
+</script>
 
 </head>
 
@@ -70,7 +108,11 @@
 
 </nav>
 
-<a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer" class="btn btn-primary desktop-cta">
+<a href="https://wa.me/5562991787997"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn btn-primary desktop-cta"
+   onclick="return gtag_report_conversion('https://wa.me/5562991787997');">
 Agendar consulta
 </a>
 
@@ -109,21 +151,15 @@ Consulte o endereço completo e abra a rota diretamente no Google Maps.
 <h2>Núcleo D’Aguiar em Goiânia</h2>
 
 <p>
-
 Estamos localizados na
-
 <strong>Galeria Donato Ferreira</strong>,
-
 no Setor Bueno — uma região central e de fácil acesso.
-
 </p>
 
 <p>
-
-📍 Av. T-1, 1536  
-Galeria Donato Ferreira – Sala 106  
+📍 Av. T-1, 1536<br>
+Galeria Donato Ferreira – Sala 106<br>
 Setor Bueno – Goiânia – GO
-
 </p>
 
 <div class="hero-actions">
@@ -132,7 +168,8 @@ Setor Bueno – Goiânia – GO
 href="https://maps.app.goo.gl/ekH7ZqNXtSfvfyAc9"
 target="_blank"
 rel="noopener noreferrer"
-class="btn btn-secondary">
+class="btn btn-secondary"
+onclick="return gtag_report_maps_click('https://maps.app.goo.gl/ekH7ZqNXtSfvfyAc9');">
 
 Abrir rota no Google Maps
 
@@ -172,10 +209,8 @@ title="Mapa da localização do Núcleo D’Aguiar">
 <p>Psicologia, Neurociências & Associados</p>
 
 <p>
-
 Cuidado psicológico com base científica,
 escuta qualificada e acolhimento humano.
-
 </p>
 
 </div>
@@ -201,26 +236,23 @@ escuta qualificada e acolhimento humano.
 <ul>
 
 <li>
-
-<a href="https://wa.me/5562991787997" target="_blank" rel="noopener noreferrer">
+<a href="https://wa.me/5562991787997"
+   target="_blank"
+   rel="noopener noreferrer"
+   onclick="return gtag_report_conversion('https://wa.me/5562991787997');">
 WhatsApp
 </a>
-
 </li>
 
 <li>
-
 <a href="https://instagram.com/nucleo.daguiar" target="_blank" rel="noopener noreferrer">
 Instagram
 </a>
-
 </li>
 
 <li>
-
-Av. T-1, 1536 – Setor Bueno  
+Av. T-1, 1536 – Setor Bueno<br>
 Galeria Donato Ferreira – Goiânia – GO
-
 </li>
 
 </ul>
@@ -242,7 +274,8 @@ href="https://wa.me/5562991787997"
 target="_blank"
 rel="noopener noreferrer"
 class="floating-whatsapp"
-aria-label="Falar no WhatsApp">
+aria-label="Falar no WhatsApp"
+onclick="return gtag_report_conversion('https://wa.me/5562991787997');">
 
 WhatsApp
 
