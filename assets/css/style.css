@@ -2166,3 +2166,26 @@ ul {
 .page-especialidades .cta-specialties p {
   margin-bottom: 1.2rem; /* antes 1.6rem */
 }
+
+
+
+
+/* ===== AJUSTE ESPECÍFICO – PÁGINA EQUIPE (CTA FINAL) ===== */
+
+.page-equipe .cta-section {
+  padding: 40px 0 48px; /* reduz espaço externo */
+}
+
+.page-equipe .cta-team {
+  max-width: 880px; /* antes 900 */
+  padding: clamp(22px, 3vw, 34px); /* reduz respiro interno */
+  box-shadow: 0 18px 40px rgba(31, 74, 67, 0.07);
+}
+
+.page-equipe .cta-team h2 {
+  max-width: 22ch; /* antes mais estreito */
+}
+
+.page-equipe .cta-team p {
+  margin-bottom: 1.2rem; /* reduz espaço */
+}
