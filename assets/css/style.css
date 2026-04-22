@@ -2141,3 +2141,28 @@ ul {
     min-width: unset;
   }
 }
+
+
+
+
+
+
+/* ===== AJUSTE ESPECÍFICO – PÁGINA ESPECIALIDADES (CTA FINAL) ===== */
+
+.page-especialidades .cta-section {
+  padding: 40px 0 48px; /* reduz espaço externo */
+}
+
+.page-especialidades .cta-specialties {
+  max-width: 880px; /* antes 940 */
+  padding: clamp(22px, 3vw, 34px); /* reduz respiro interno */
+  box-shadow: 0 18px 40px rgba(31, 74, 67, 0.07);
+}
+
+.page-especialidades .cta-specialties h2 {
+  max-width: 22ch; /* antes 17ch (muito estreito) */
+}
+
+.page-especialidades .cta-specialties p {
+  margin-bottom: 1.2rem; /* antes 1.6rem */
+}
