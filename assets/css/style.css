@@ -2189,3 +2189,37 @@ ul {
 .page-equipe .cta-team p {
   margin-bottom: 1.2rem; /* reduz espaço */
 }
+
+
+
+
+/* ===== AJUSTE ESPECÍFICO – PÁGINA CONTATO (CTA FINAL) ===== */
+
+.page-contato .cta-section {
+  padding: 40px 0 48px; /* reduz espaço externo */
+}
+
+.page-contato .cta-box {
+  max-width: 900px; /* leve ajuste de largura */
+  padding: clamp(22px, 3vw, 34px); /* reduz respiro interno */
+  box-shadow: 0 18px 40px rgba(31, 74, 67, 0.07);
+  grid-template-columns: 1fr; /* garante centralização elegante */
+  text-align: center;
+}
+
+/* 🔥 MELHORIA PRINCIPAL – TEXTO MAIS HORIZONTAL */
+.page-contato .cta-box h2 {
+  max-width: 26ch; /* antes ~17ch → muito vertical */
+}
+
+/* texto mais equilibrado */
+.page-contato .cta-box p {
+  max-width: 60ch;
+  margin-bottom: 1.2rem;
+}
+
+/* botão mais bem posicionado */
+.page-contato .cta-box .btn {
+  justify-self: center;
+  margin-top: 8px;
+}
