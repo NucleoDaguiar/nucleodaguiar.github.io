@@ -2260,3 +2260,67 @@ ul {
 .page-contato .cta-box .btn {
   margin-top: 4px;
 }
+
+
+
+/* ===== CTA CONTATO – SPLIT PREMIUM (DESKTOP) ===== */
+
+.page-contato .cta-section {
+  padding: 32px 0 40px;
+}
+
+.page-contato .cta-box {
+  max-width: 900px;
+  padding: 26px 32px;
+  box-shadow: 0 16px 36px rgba(31, 74, 67, 0.06);
+
+  display: grid;
+  grid-template-columns: 1.2fr auto; /* 🔥 layout lado a lado */
+  align-items: center;
+  gap: 28px;
+
+  text-align: left; /* 🔥 deixa mais profissional */
+}
+
+/* BLOCO DE TEXTO */
+.page-contato .cta-box h2 {
+  max-width: 26ch;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.page-contato .cta-box p {
+  max-width: 48ch;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* BOTÃO */
+.page-contato .cta-box .btn {
+  justify-self: end; /* 🔥 botão alinhado à direita */
+  margin-top: 0;
+}
+
+/* ===== RESPONSIVO (MOBILE VOLTA PRO PADRÃO BONITO) ===== */
+
+@media (max-width: 768px) {
+  .page-contato .cta-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 22px 20px;
+  }
+
+  .page-contato .cta-box h2 {
+    max-width: 22ch;
+  }
+
+  .page-contato .cta-box p {
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .page-contato .cta-box .btn {
+    justify-self: center;
+    width: 100%;
+  }
+}
