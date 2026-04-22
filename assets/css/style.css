@@ -2324,3 +2324,107 @@ ul {
     width: 100%;
   }
 }
+
+
+/* ===== SISTEMA GLOBAL DE CTA PREMIUM ===== */
+
+/* BASE PARA TODOS OS CTAS */
+.cta-box,
+.cta-team,
+.cta-specialties,
+.cta-premium {
+  max-width: 900px;
+  margin: 0 auto;
+
+  padding: clamp(24px, 3vw, 34px);
+
+  background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(250,247,243,0.98));
+  border: 1px solid rgba(31,74,67,0.08);
+  border-radius: 26px;
+
+  box-shadow: 0 16px 36px rgba(31,74,67,0.06);
+
+  display: grid;
+  grid-template-columns: 1.2fr auto;
+  align-items: center;
+  gap: 28px;
+
+  text-align: left;
+}
+
+/* TÍTULOS */
+.cta-box h2,
+.cta-team h2,
+.cta-specialties h2,
+.cta-premium h2 {
+  max-width: 26ch;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+/* TEXTOS */
+.cta-box p,
+.cta-team p,
+.cta-specialties p,
+.cta-premium p {
+  max-width: 50ch;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* BOTÕES */
+.cta-box .btn,
+.cta-team .btn,
+.cta-specialties .btn,
+.cta-premium .btn {
+  justify-self: end;
+}
+
+/* CONTAINER DE BOTÕES (quando tem 2) */
+.cta-team-actions,
+.cta-specialties-actions {
+  justify-content: flex-end;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .cta-box,
+  .cta-team,
+  .cta-specialties,
+  .cta-premium {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 22px 18px;
+  }
+
+  .cta-box h2,
+  .cta-team h2,
+  .cta-specialties h2,
+  .cta-premium h2 {
+    max-width: 22ch;
+  }
+
+  .cta-box p,
+  .cta-team p,
+  .cta-specialties p,
+  .cta-premium p {
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .cta-box .btn,
+  .cta-team .btn,
+  .cta-specialties .btn,
+  .cta-premium .btn {
+    justify-self: center;
+    width: 100%;
+  }
+
+  .cta-team-actions,
+  .cta-specialties-actions {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
